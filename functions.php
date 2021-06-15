@@ -1,9 +1,10 @@
 <?php
 
 function wp_styles_scripts(){
-
+    wp_enqueue_style('bootstrap-grid', get_template_directory_uri() .'/assets/bootstrap/bootstrap-grid.min.css');
+    wp_enqueue_style('bootstrap-utilities', get_template_directory_uri() .'/assets/bootstrap/bootstrap-utilities.min.css');
+    wp_enqueue_style('print', get_template_directory_uri() .'/assets/print.css');
     wp_enqueue_style('style', get_stylesheet_uri());
-
 }
 add_action('wp_enqueue_scripts', 'wp_styles_scripts');
 //Ajouter le logo
