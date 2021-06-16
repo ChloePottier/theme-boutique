@@ -1,12 +1,13 @@
 <?php
-
-function wp_styles_scripts(){
-    wp_enqueue_style('style', get_stylesheet_uri());
-    wp_enqueue_style('bootstrap-grid', get_template_directory_uri() .'/assets/bootstrap/bootstrap-grid.min.css');
-    wp_enqueue_style('bootstrap-utilities', get_template_directory_uri() .'/assets/bootstrap/bootstrap-utilities.min.css');
+function wpbootstrap_styles_scripts(){
+    wp_enqueue_style('bootstrap', ''. get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.css');
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('bootstrap-js', ''.get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.js', array('jquery', 'popper'), 1, true);
     wp_enqueue_style('print', get_template_directory_uri() .'/assets/print.css');
+    wp_enqueue_style('style', get_stylesheet_uri());
+
 }
-add_action('wp_enqueue_scripts', 'wp_styles_scripts');
+add_action('wp_enqueue_scripts', 'wpbootstrap_styles_scripts');
 //Ajouter le logo
 function theme_custom_logo_setup() {
     $defaults = array(
@@ -31,15 +32,10 @@ function themename_custom_header_setup() {
         // Header text color default
         'default-text-color'        => '000',
         // Header image width (in pixels)
-        'width'             => 1000,
+        'width'             => 1900,
         // Header image height (in pixels)
-        'height'            => 198,
-        'flex-width'         => true,
-        'flex-height'        => true,
-        // Header image random rotation default
-        'random-default'        => false,
-        // Enable upload of image file in admin 
-        'uploads'       => false,
+        'height'            => 1200,
+  
         // function to be called in theme head section
         'wp-head-callback'      => 'wphead_cb',
         //  function to be called in preview page head section
@@ -56,6 +52,7 @@ function wpm_myme_types($mime_types){
     $mime_types['webp'] = 'image/webp'; //On autorise les .webp
     return $mime_types;
 }
+//Menus
 function register_nav_top() {
     register_nav_menus(
       array(
@@ -65,3 +62,9 @@ function register_nav_top() {
      );
    }
    add_action( 'init', 'register_nav_top' );
+// ajout format d'image      
+if(function_exists('add_theme_support')):
+    add_image_size('custom_logo_sm',80,80,true);
+    add_image_size('custom_header_sm',576,250,false);    
+
+endif;

@@ -6,10 +6,16 @@ Version:     1.0
 Text Domain:  akaleyaboutique
 Tags:         e-commerce, eco-conception
 */
+/* body{margin-top: 0!important;} */
 a{text-decoration: none;}
 li{list-style: none;}
+ul{padding: 0;}
+.bg-cover{background-size: cover !important;}
 /* Colors */
 /* Width */
+
+/* header */
+.bg-header{background: #000; height:100vh;}
 
 /* Grid */
 /* @media (min-width: 576px) {
