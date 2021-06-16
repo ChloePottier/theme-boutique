@@ -15,7 +15,50 @@ ul{padding: 0;}
 /* Width */
 
 /* header */
-.bg-header{background: #000; height:100vh;}
+.custom-header{height: auto; width: 100%; display: block;}
+#menu-top-md #menu-header{display: flex;}
+/* burger */
+.fondu{ animation: 0.5s fondu linear;}
+@keyframes fondu{
+    0% {opacity: 0;}
+    100%{opacity: 100;}
+}
+#navigation{
+    position: fixed;
+    z-index: 1500;
+    width: 200vw;
+    height: 110vh;
+    left: 0;
+    background: #000;
+    padding: 5rem 10rem;
+}
+.burger{    margin: 0;
+    z-index: 2000;
+    cursor: pointer;
+    width: 4.75rem;
+    height: 4.75rem;
+    padding-top: .8rem;}
+.display-none{display:none; visibility: hidden;}
+.display-flex{display: flex; flex-direction: column;}
+.display-flex2{display: flex;}
+.burger span:last-child {margin-bottom:0px;}
+.isclosed{transform: none; 
+    width: 35px;
+    height: 4px;
+    display: block;
+    margin-bottom: 6px;
+}
+.isopen-burger1{transform: skew(5deg) translateY(12px) rotate(45deg);}
+.isopen-burger2{display: none;}
+.isopen-burger3{transform: skew(5deg) translateY(2px) rotate(-45deg);}
+.isclosed2{transform: none; 
+    width: 35px;
+    height: 4px;
+    display: block;
+    margin-bottom: 6px;
+}
+/* burger end */
+
 
 /* Grid */
 /* @media (min-width: 576px) {

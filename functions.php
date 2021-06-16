@@ -3,9 +3,9 @@ function wpbootstrap_styles_scripts(){
     wp_enqueue_style('bootstrap', ''. get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.css');
     wp_enqueue_script('jquery');
     wp_enqueue_script('bootstrap-js', ''.get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.js', array('jquery', 'popper'), 1, true);
+    // wp_enqueue_script('burger', ''.get_template_directory_uri() .'/assets/js/navigation/burger.js'); // ca marche pas
     wp_enqueue_style('print', get_template_directory_uri() .'/assets/print.css');
     wp_enqueue_style('style', get_stylesheet_uri());
-
 }
 add_action('wp_enqueue_scripts', 'wpbootstrap_styles_scripts');
 //Ajouter le logo
@@ -34,8 +34,7 @@ function themename_custom_header_setup() {
         // Header image width (in pixels)
         'width'             => 1900,
         // Header image height (in pixels)
-        'height'            => 1200,
-  
+        'height'            => 1200,  
         // function to be called in theme head section
         'wp-head-callback'      => 'wphead_cb',
         //  function to be called in preview page head section
