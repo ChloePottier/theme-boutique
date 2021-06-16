@@ -3,6 +3,7 @@ function wpbootstrap_styles_scripts(){
     wp_enqueue_style('bootstrap', ''. get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.css');
     wp_enqueue_script('jquery');
     wp_enqueue_script('bootstrap-js', ''.get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.js', array('jquery', 'popper'), 1, true);
+    wp_enqueue_style('font-awesome', get_template_directory_uri() .'/assets/font-awesome/css/all.css');
     // wp_enqueue_script('burger', ''.get_template_directory_uri() .'/assets/js/navigation/burger.js'); // ca marche pas
     wp_enqueue_style('print', get_template_directory_uri() .'/assets/print.css');
     wp_enqueue_style('style', get_stylesheet_uri());
@@ -57,8 +58,7 @@ function register_nav_top() {
       array(
         'header-menu' => __( 'Header Menu' ),
         'shop-menu' => __( 'Shop Menu' )
-       )
-     );
+       ));
    }
    add_action( 'init', 'register_nav_top' );
 // ajout format d'image      

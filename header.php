@@ -27,10 +27,10 @@
                 <div class='col-4 d-none d-md-flex ' id='menu-top-md'itemscope itemtype='https://schema.org/BreadcrumbList'>
                     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
                 </div>
-                <div class='col-4' >
-                    <?php wp_nav_menu( array( 'theme_location' => 'shop-menu') ); ?>
+                <div class='col-6 fs-3 d-flex flex-row justify-content-end' >
+                    <?php wp_nav_menu( array( 'theme_location' => 'shop-menu', 'menu_class' => 'pt-4') ); ?>
                 </div>
-                <div class='col d-flex justify-content-end d-md-none'>
+                <div class='col-2 d-flex justify-content-end d-md-none'>
                     <!-- menu burger  -->
                     <label class='burger text-center d-flex flex-column d-md-none text-white position-fixed rounded-circle ' id='burger'>MENU
                         <span class='bg-white isclosed mx-auto' id='burger1'>&nbsp;</span>

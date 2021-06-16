@@ -16,7 +16,9 @@ ul{padding: 0;}
 
 /* header */
 .custom-header{height: auto; width: 100%; display: block;}
-#menu-top-md #menu-header{display: flex;}
+#menu-top-md #menu-header,#menu-shop{display: flex;}
+#menu-shop a{padding-right: 1rem; color: #fff;}
+#menu-shop a:hover{color: #c9c9c9;}
 /* burger */
 .fondu{ animation: 0.5s fondu linear;}
 @keyframes fondu{
