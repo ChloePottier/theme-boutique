@@ -23,19 +23,26 @@ add_action('after_setup_theme','theme_custom_logo_setup');
 // Ajouter la prise en charge des images mises en avant
 add_theme_support( 'post-thumbnails' );
 //Ajouter image header
-add_theme_support( 'custom-header' );
+$args = array(
+    // 'flex-width'    => true,
+    'width'         => 1920,
+    // 'flex-height'   => true,
+    'height'        => 1440,
+    'default-image' => get_template_directory_uri() . '/images/gabarit-image-header.jpg',
+);
+add_theme_support( 'custom-header', $args );
 function themename_custom_header_setup() {
     $defaults = array(
         // Default Header Image to display
-        'default-image'         => get_template_directory_uri() . '/images/headers/default.jpg',
+        // 'default-image'         => get_template_directory_uri() . '/images/headers/default.jpg',
         // Display the header text along with the image
         'header-text'           => false,
         // Header text color default
         'default-text-color'        => '000',
         // Header image width (in pixels)
-        'width'             => 1900,
+        'width'             => 1920,
         // Header image height (in pixels)
-        'height'            => 1200,  
+        'height'            => 1440,  
         // function to be called in theme head section
         'wp-head-callback'      => 'wphead_cb',
         //  function to be called in preview page head section
@@ -63,7 +70,19 @@ function register_nav_top() {
    add_action( 'init', 'register_nav_top' );
 // ajout format d'image     	
 function wpdocs_theme_setup() {
-    add_image_size('custom_logo_sm',80,80,true);
-    add_image_size('custom_header_sm',576,250,false);  
+    add_image_size('custom_header_xs',575,481,true); 
+    add_image_size('custom_header_sm',767,575,true); 
+    add_image_size('custom_header_md',991,743,true); 
+    add_image_size('custom_header_lg',1199,899,true); 
+    add_image_size('custom_header_xl',1399,1049,true); 
+    add_image_size('custom_header_xxl',1920,1440,true);  
 }  
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+//rendre la taille d'image sélectable depuis le back-office
+add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+ 
+function my_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'custom_header_xs' => __('Custom Header XS'),
+    ) );
+}
