@@ -1,5 +1,6 @@
 <?php
 function wpbootstrap_styles_scripts(){
+
     wp_enqueue_style('bootstrap', ''. get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.css');
     wp_enqueue_script('jquery');
     wp_enqueue_script('bootstrap-js', ''.get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.js', array('jquery', 'popper'), 1, true);
@@ -12,8 +13,7 @@ add_action('wp_enqueue_scripts', 'wpbootstrap_styles_scripts');
 //Ajouter le logo
 function theme_custom_logo_setup() {
     $defaults = array(
-    'height'      => 150,
-    'width'       => 150,
+    'height'      => 80,
     'flex-width'  => true,
     'header-text' => array( 'site-title', 'site-description' )
     );
@@ -61,9 +61,9 @@ function register_nav_top() {
        ));
    }
    add_action( 'init', 'register_nav_top' );
-// ajout format d'image      
-if(function_exists('add_theme_support')):
+// ajout format d'image     	
+function wpdocs_theme_setup() {
     add_image_size('custom_logo_sm',80,80,true);
-    add_image_size('custom_header_sm',576,250,false);    
-
-endif;
+    add_image_size('custom_header_sm',576,250,false);  
+}  
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
