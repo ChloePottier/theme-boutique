@@ -15,7 +15,7 @@
 </head>
 <body id='top' <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <header  id='masthead' class='position-relative site-header'>
+    <header  id='masthead' class='position-relative vh-100 overflow-hidden'>
     <div class='container '>
         <div class='row position-absolute row-nav'>
             <div class='col-4 col-md-3'>
@@ -36,7 +36,7 @@
                     <span class='bg-white isclosed mx-auto' id='burger2'>&nbsp;</span>
                     <span class='bg-white isclosed mx-auto' id='burger3'>&nbsp;</span>
                 </label>
-                <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_id' => 'navigation', 'menu_class' => 'display-none' ) ); ?>
+                <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_id' => 'navigation', 'menu_class' => 'display-none fw-bold fs-3' ) ); ?>
             </div>
         </div>
     </div>
@@ -45,8 +45,8 @@
 // Specifying width of 400 (px) and height of 200 (px).
 $srcset = wp_get_attachment_image_srcset( get_custom_header()->attachment_id,'custom_logo_sm');
 ?>
-    <?php if ( get_header_image('custom_header_xs') ) : ?>
-        <img src="<?php header_image('custom_header_xs'); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+    <?php if ( get_header_image() ) : ?>
+        <img src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
     <?php endif; ?>
     </div>   
 </header>
