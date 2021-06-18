@@ -6,12 +6,12 @@
 
 <?php get_header(); ?>
 
-<div id='primary' class='content-area'>
-    <main id='main' class='site-main' role='main'>
+<div id='primary' class='content-area container-fluid'>
+    <main id='main' class='site-main front-page container' role='main'>
 
     <?php get_template_part('template-parts/content/content','home');?>
 
 
-    </main><!-- #main -->
-</div><!-- #primary -->
+    </main>
+</div>
 <?php get_footer(); ?>

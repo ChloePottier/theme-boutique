@@ -41,8 +41,8 @@ ul,p{padding: 0;margin: 0;}
     margin: 0;
     z-index: 2000;
     cursor: pointer;
-    width: 4.75rem;
-    height: 4.75rem;
+    /* width: 4.75rem;
+    height: 4.75rem; */
     padding-top: .8rem;
     font-size: .8rem;
 }
@@ -67,8 +67,8 @@ ul,p{padding: 0;margin: 0;}
 }
 /* content */
 .content-area{height: auto; min-height: 95vh;}
-
-
+.woocommerce .woocommerce-breadcrumb{padding: 1rem 0;}
+footer #copyrightinfo{font-size: .8rem!important;}
 /* Grid */
 @media (min-width: 576px) {
     .row-nav{max-width:540px;}
