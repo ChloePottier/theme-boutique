@@ -21,6 +21,8 @@ ul,p{padding: 0;margin: 0;}
 .akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover,.menu-down a:hover{color: #c9c9c9 !important;}
 .menu-down .current-menu-item a{color: #727272 !important;}
 .text-black,.akaleya a:hover{color: #000 !important;}
+.text-grey-dark,.menu-down a{color:#2e2e2e;}
+.bg-grey-dark{background:#2e2e2e;}
 .box-shadow{box-shadow: 0 0 1.3rem #818181;}
     /* Width */
 .vh-30{height:30vh!important;}
@@ -31,7 +33,7 @@ form label{display: block;}
 .row-nav{width: 100%; }
 #menu-top-md #menu-header,#menu-shop{display: flex;}
 .menu a,#navigation a{padding-right: 1rem; color: #fff;}
-.menu-down a, .text-grey-dark{color:#2e2e2e;}
+
 .menu-down a{padding-right: 1rem; }
 #navigation a{padding-bottom:1rem;}
 .custom-header{position: relative; display: table;height: 300px;height: 100vh;width: 100%;}

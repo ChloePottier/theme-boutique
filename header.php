@@ -36,7 +36,7 @@
                 <?php wp_nav_menu( array( 'theme_location' => 'shop-menu', 'menu_class' => 'pt-4 menu') ); ?>
             </div>
             <div class='col d-flex d-lg-none justify-content-end'>
-                <?php get_template_part('template-parts/navigation/navigation','burger') ?>;
+                <?php get_template_part('template-parts/navigation/navigation','burger'); ?>
             </div>
         </div>
         </div>
