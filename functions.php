@@ -37,7 +37,6 @@ function akaleyashop_custom_header_setup() {
 			)
 		)
 	);
-
 	register_default_headers(
 		array(
 			'default-image' => array(
@@ -49,10 +48,6 @@ function akaleyashop_custom_header_setup() {
 	);
 }
 add_action( 'after_setup_theme', 'akaleyashop_custom_header_setup' );
-
-
-
-
 /* Autoriser l'upload de tous types de format dans les médias */
 add_filter('upload_mimes', 'wpm_myme_types', 1, 1);
 function wpm_myme_types($mime_types){

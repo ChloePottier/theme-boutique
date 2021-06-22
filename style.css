@@ -4,7 +4,7 @@ Author:       Akaleya, Web & Print
 Description:   Theme for web site or e-commerce. Can be used with Woocommerce
 Version:     1.0
 Text Domain:  akaleyaboutique
-Tags:         e-commerce, eco-conception
+Tags:         website,e-commerce, eco-conception
 */
 /* body{margin-top: 0!important;} */
 a{text-decoration: none;}
@@ -17,19 +17,23 @@ ul,p{padding: 0;margin: 0;}
 .zindex-2{z-index: 2;}
 .zindex-3{z-index: 3;}
 .zindex-4{z-index: 4;}
-
 /* Colors */
-.akaleya a{color: #424242 !important;}
+.akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover,.menu-down a:hover{color: #c9c9c9 !important;}
+.menu-down .current-menu-item a{color: #727272 !important;}
 .text-black,.akaleya a:hover{color: #000 !important;}
-
-/* Width */
-.vh-100{height:100vh;}
+.box-shadow{box-shadow: 0 0 1.3rem #818181;}
+    /* Width */
+.vh-30{height:30vh!important;}
+form, input, textarea{width: 100%;}
+form label{display: block;}
 /* header */
+#navbar{top: 0;}
 .row-nav{width: 100%; }
 #menu-top-md #menu-header,#menu-shop{display: flex;}
-#menu-shop a, #menu-header a,#navigation a{padding-right: 1rem; color: #fff;}
+.menu a,#navigation a{padding-right: 1rem; color: #fff;}
+.menu-down a, .text-grey-dark{color:#2e2e2e;}
+.menu-down a{padding-right: 1rem; }
 #navigation a{padding-bottom:1rem;}
-#menu-shop a:hover, #menu-header a:hover,#navigation a:hover{color: #c9c9c9;}
 .custom-header{position: relative; display: table;height: 300px;height: 100vh;width: 100%;}
 .custom-header-media {
     bottom: 0;
@@ -98,7 +102,6 @@ ul,p{padding: 0;margin: 0;}
     margin-bottom: 6px;
 }
 /* content */
-
 .content-area{height: auto; min-height: 95vh;}
 .woocommerce .woocommerce-breadcrumb{padding: 1rem 0;}
 footer #copyrightinfo{font-size: .8rem!important;}
