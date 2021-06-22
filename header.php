@@ -16,18 +16,18 @@
 <body id='top' <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <header  id='masthead' class='position-relative vh-100 overflow-hidden'>
-    <div class='container '>
-        <div>
-        <div class='row position-relative row-nav'>
-            <div class='col-4 col-md-3 col-lg-2 zindex-3 position-fixed'>
+    <div class='container-fluid position-fixed zindex-3' id='navbar'>
+        <div class='container'>
+        <div class='row row-nav'>
+            <div class='col-4 col-md-3 col-lg-2'>
                 <?php if (function_exists('the_custom_logo')){
                         the_custom_logo();
                 }?>
             </div>
-            <div class='col-lg-8 d-none d-lg-flex fw-bold pt-4 fs-5 text-shadow zindex-3 position-fixed' id='menu-top-md'itemscope itemtype='https://schema.org/BreadcrumbList'>
+            <div class='col-lg-8 d-none d-lg-flex fw-bold pt-4 fs-5 text-shadow' id='menu-top-md'itemscope itemtype='https://schema.org/BreadcrumbList'>
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
             </div>
-            <div class='col-6 col-md-5 col-lg-2 fs-3 d-flex flex-row justify-content-end text-shadow zindex-3 position-fixed' >
+            <div class='col-6 col-md-5 col-lg-2 fs-3 d-flex flex-row justify-content-end text-shadow' >
                 <?php wp_nav_menu( array( 'theme_location' => 'shop-menu', 'menu_class' => 'pt-4') ); ?>
             </div>
             <div class='col d-flex d-lg-none justify-content-end'>
