@@ -12,7 +12,16 @@ li{list-style: none;}
 ul,p{padding: 0;margin: 0;}
 .bg-cover{background-size: cover !important;}
 .text-shadow{text-shadow: #000 2px 2px 5px;}
+.fw-600{font-weight: 600;}
+.zindex-1{z-index: 1;}
+.zindex-2{z-index: 2;}
+.zindex-3{z-index: 3;}
+.zindex-4{z-index: 4;}
+
 /* Colors */
+.akaleya a{color: #424242 !important;}
+.text-black,.akaleya a:hover{color: #000 !important;}
+
 /* Width */
 .vh-100{height:100vh;}
 /* header */
@@ -21,7 +30,32 @@ ul,p{padding: 0;margin: 0;}
 #menu-shop a, #menu-header a,#navigation a{padding-right: 1rem; color: #fff;}
 #navigation a{padding-bottom:1rem;}
 #menu-shop a:hover, #menu-header a:hover,#navigation a:hover{color: #c9c9c9;}
-.custom-header{height: 100vh; width: 100%; display: block;}
+.custom-header{position: relative; display: table;height: 300px;height: 100vh;width: 100%;}
+.custom-header-media {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.custom-header img, .custom-header video,.custom-header iframe{
+    position: fixed;
+	height: auto;
+	left: 50%;
+	max-width: 1000%;
+	min-height: 100%;
+	min-width: 100%;
+	min-width: 100vw; /* vw prevents 1px gap on left that 100% has */
+	width: auto;
+	top: 50%;
+	padding-bottom: 1px; /* Prevent header from extending beyond the footer */
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
 /* burger */
 .fondu{ animation: 0.5s fondu linear;}
 @keyframes fondu{
@@ -30,7 +64,7 @@ ul,p{padding: 0;margin: 0;}
 }
 #navigation{
     position: fixed;
-    z-index: 1500;
+    z-index: 2;
     width: 200vw;
     height: 110vh;
     left: 0;
@@ -39,10 +73,8 @@ ul,p{padding: 0;margin: 0;}
 }
 .burger{    
     margin: 0;
-    z-index: 2000;
+    z-index: 3;
     cursor: pointer;
-    /* width: 4.75rem;
-    height: 4.75rem; */
     padding-top: .8rem;
     font-size: .8rem;
 }
@@ -66,6 +98,7 @@ ul,p{padding: 0;margin: 0;}
     margin-bottom: 6px;
 }
 /* content */
+
 .content-area{height: auto; min-height: 95vh;}
 .woocommerce .woocommerce-breadcrumb{padding: 1rem 0;}
 footer #copyrightinfo{font-size: .8rem!important;}

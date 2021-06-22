@@ -21,36 +21,38 @@ function theme_custom_logo_setup() {
 add_action('after_setup_theme','theme_custom_logo_setup');
 // Ajouter la prise en charge des images mises en avant
 add_theme_support( 'post-thumbnails' );
-//Ajouter image header
-$args = array(
-    // 'flex-width'    => true,
-    'width'         => 1920,
-    // 'flex-height'   => true,
-    'height'        => 1440,
-    'default-image' => get_template_directory_uri() . '/images/gabarit-image-header.jpg',
-);
-add_theme_support( 'custom-header', $args );
-function themename_custom_header_setup() {
-    $defaults = array(
-        // Default Header Image to display
-        // 'default-image'         => get_template_directory_uri() . '/images/headers/default.jpg',
-        // Display the header text along with the image
-        'header-text'           => false,
-        // Header text color default
-        'default-text-color'        => '000',
-        // Header image width (in pixels)
-        'width'             => 1920,
-        // Header image height (in pixels)
-        'height'            => 1440,  
-        // function to be called in theme head section
-        'wp-head-callback'      => 'wphead_cb',
-        //  function to be called in preview page head section
-        'admin-head-callback'       => 'adminhead_cb',
-        // function to produce preview markup in the admin screen
-        'admin-preview-callback'    => 'adminpreview_cb',
-        );
+
+
+function akaleyashop_custom_header_setup() {
+	add_theme_support(
+		'custom-header',
+		apply_filters(
+			'akaleyashop_custom_header_args',
+			array(
+				'default-image'    => get_parent_theme_file_uri( '/images/cropped-gabarit-image-header.jpg' ),
+				'width'            => 2000,
+				'height'           => 1200,
+				'flex-height'      => true,
+				'video'            => true,
+			)
+		)
+	);
+
+	register_default_headers(
+		array(
+			'default-image' => array(
+				'url'           => '%s/images/cropped-gabarit-image-header.jpg',
+				'thumbnail_url' => '%s/images/cropped-gabarit-image-header.jpg',
+				'description'   => __( 'Default Header Image', 'akaleyashop' ),
+			),
+		)
+	);
 }
-add_action( 'after_setup_theme', 'themename_custom_header_setup' );
+add_action( 'after_setup_theme', 'akaleyashop_custom_header_setup' );
+
+
+
+
 /* Autoriser l'upload de tous types de format dans les médias */
 add_filter('upload_mimes', 'wpm_myme_types', 1, 1);
 function wpm_myme_types($mime_types){
@@ -67,29 +69,51 @@ function register_nav_top() {
        ));
    }
    add_action( 'init', 'register_nav_top' );
+//CPt bouton boutique
+//    function cpt_btn_shop_init() {
+//     $labels = array(
+//         'name'                  => _x( 'Bouton Boutique', 'Post type general name', 'textdomain' ),
+//         'singular_name'         => _x( 'Bouton Boutique', 'Post type singular name', 'textdomain' ),
+//         'menu_name'             => _x( 'Bouton Boutique', 'Admin Menu text', 'textdomain' ),
+//     ); 
+//     $args = array(
+//         'labels'             => $labels,
+//         'public'             => true,
+//         'query_var'          => true,
+//         'rewrite'            => array( 'slug' => 'btn_shop' ),
+//         'capability_type'    => 'post',
+//         'has_archive'        => true,
+//         'menu_position'      => null,
+//         'menu_icon'          => 'dashicons-cart',
+//         'supports'           => array( 'title'),
+//     ); 
+//     register_post_type( 'btn_shop', $args );
+//     } 
+//     add_action( 'init', 'cpt_btn_shop_init' );
+    // Le hook init lance la fonction
 // ajout format d'image     	
-function wpdocs_theme_setup() {
-    add_image_size('custom_header_xs',575,481,true); 
-    add_image_size('custom_header_sm',767,575,true); 
-    add_image_size('custom_header_md',991,743,true); 
-    add_image_size('custom_header_lg',1199,899,true); 
-    add_image_size('custom_header_xl',1399,1049,true); 
-    add_image_size('custom_header_xxl',1920,1440,true);  
-}  
-add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+// function wpdocs_theme_setup() {
+//     add_image_size('custom_header_xs',575,481,true); 
+//     add_image_size('custom_header_sm',767,575,true); 
+//     add_image_size('custom_header_md',991,743,true); 
+//     add_image_size('custom_header_lg',1199,899,true); 
+//     add_image_size('custom_header_xl',1399,1049,true); 
+//     add_image_size('custom_header_xxl',1920,1440,true);  
+// }  
+// add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 //rendre la taille d'image sélectable depuis le back-office
-add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+// add_filter( 'image_size_names_choose', 'my_custom_sizes' );
  
-function my_custom_sizes( $sizes ) {
-    return array_merge( $sizes, array(
-        'custom_header_xs' => __('Custom Header XS'),
-        'custom_header_sm' => __('Custom Header sm'),
-        'custom_header_md' => __('Custom Header md'),
-        'custom_header_lg' => __('Custom Header lg'),
-        'custom_header_xl' => __('Custom Header xl'),
-        'custom_header_xxl' => __('Custom Header xxl'),
-    ) );
-}
+// function my_custom_sizes( $sizes ) {
+//     return array_merge( $sizes, array(
+//         'custom_header_xs' => __('Custom Header XS'),
+//         'custom_header_sm' => __('Custom Header sm'),
+//         'custom_header_md' => __('Custom Header md'),
+//         'custom_header_lg' => __('Custom Header lg'),
+//         'custom_header_xl' => __('Custom Header xl'),
+//         'custom_header_xxl' => __('Custom Header xxl'),
+//     ) );
+// }
 // Woocommerce
 function mytheme_add_woocommerce_support() {
     add_theme_support( 'woocommerce', array(
