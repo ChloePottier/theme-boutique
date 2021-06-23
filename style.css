@@ -94,9 +94,11 @@ form label{display: block;}
     display: block;
     margin-bottom: 6px;
 }
+.isopen{color: #fff!important;}
 .isopen-burger1{transform: skew(5deg) translateY(12px) rotate(45deg);}
 .isopen-burger2{display: none;}
 .isopen-burger3{transform: skew(5deg) translateY(2px) rotate(-45deg);}
+.isopen-burger1,.isopen-burger3{background-color: #fff!important;}
 .isclosed2{transform: none; 
     width: 35px;
     height: 4px;
