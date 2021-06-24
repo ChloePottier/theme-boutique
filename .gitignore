@@ -5,3 +5,5 @@ images/
 utilisation.doc
 .~lock.utilisation.doc#
 -woocommerce.php
+woocommerce/
+style-copy.css
