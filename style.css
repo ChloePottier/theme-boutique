@@ -30,12 +30,13 @@ form, input, textarea{width: 100%;}
 form label{display: block;}
 /* header */
 #navbar{top: 0;}
-.row-nav{width: 100%; }
+.row-nav{width: 100%;}
 #menu-top-md #menu-header,#menu-shop{display: flex;}
 .menu a{padding-right: 1.5rem; color: #fff;}
+#navigation li{padding-bottom:1rem;}
 #navigation a{font-size: 1.7rem; color: #fff;}
 .menu-down a{padding-right: 1rem; }
-.custom-header{position: relative; display: table;height: 300px;height: 100vh;width: 100%;}
+.custom-header{position: relative; height: 100vh;width: 100%;}
 .custom-header-media {
     bottom: 0;
     left: 0;
@@ -45,6 +46,7 @@ form label{display: block;}
     top: 0;
     width: 100%;
 }
+.custom-header-small img,.custom-header-small video,.custom-header-small iframe{position: relative; width:100%; height:auto;}
 .custom-header img, .custom-header video,.custom-header iframe{
     position: fixed;
 	height: auto;

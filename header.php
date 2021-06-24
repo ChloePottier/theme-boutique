@@ -31,8 +31,8 @@
         </header>
     <?php else : ?>
         <header  id='masthead' class='position-relative vh-30 overflow-hidden'>
-            <div class='custom-header z-index1'>
-                    <div class='custom-header-media'>
+            <div class='custom-header-small z-index1'>
+                    <div class='custom-header-media vh-30'>
                         <?php the_custom_header_markup(); ?>
                     </div>  
             </div>
