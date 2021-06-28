@@ -24,6 +24,9 @@ ul,p{padding: 0;margin: 0;}
 .text-grey-dark,.menu-down a{color:#2e2e2e;}
 .bg-grey-dark{background:#2e2e2e;}
 .box-shadow{box-shadow: 0 0 1.3rem #818181;}
+.product-category a{color:#000; text-transform: uppercase;}
+.product-category a:hover{color:#727272; }
+
     /* Width */
 .vh-30{height:30vh!important;}
 form, input, textarea{width: 100%;}
@@ -112,6 +115,7 @@ form label{font-weight: 600;}
 /* content */
 .content-area{height: auto; min-height: 56vh;}
 .woocommerce .woocommerce-breadcrumb{padding: 1rem 0;}
+.product-category a h2{font-weight: 600;}
 footer #copyrightinfo{font-size: .8rem!important;}
 /* Grid */
 @media (min-width: 576px) {

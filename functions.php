@@ -1,6 +1,5 @@
 <?php
 function wpbootstrap_styles_scripts(){
-
     wp_enqueue_style('bootstrap', ''. get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.css');
     wp_enqueue_script('jquery');
     wp_enqueue_script('bootstrap-js', ''.get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.js', array('jquery', 'popper'), 1, true);
@@ -21,8 +20,7 @@ function theme_custom_logo_setup() {
 add_action('after_setup_theme','theme_custom_logo_setup');
 // Ajouter la prise en charge des images mises en avant
 add_theme_support( 'post-thumbnails' );
-
-
+//custom header
 function akaleyashop_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
@@ -64,70 +62,6 @@ function register_nav_top() {
        ));
    }
    add_action( 'init', 'register_nav_top' );
-//CPt bouton boutique
-//    function cpt_btn_shop_init() {
-//     $labels = array(
-//         'name'                  => _x( 'Bouton Boutique', 'Post type general name', 'textdomain' ),
-//         'singular_name'         => _x( 'Bouton Boutique', 'Post type singular name', 'textdomain' ),
-//         'menu_name'             => _x( 'Bouton Boutique', 'Admin Menu text', 'textdomain' ),
-//     ); 
-//     $args = array(
-//         'labels'             => $labels,
-//         'public'             => true,
-//         'query_var'          => true,
-//         'rewrite'            => array( 'slug' => 'btn_shop' ),
-//         'capability_type'    => 'post',
-//         'has_archive'        => true,
-//         'menu_position'      => null,
-//         'menu_icon'          => 'dashicons-cart',
-//         'supports'           => array( 'title'),
-//     ); 
-//     register_post_type( 'btn_shop', $args );
-//     } 
-//     add_action( 'init', 'cpt_btn_shop_init' );
-    // Le hook init lance la fonction
-// ajout format d'image     	
-// function wpdocs_theme_setup() {
-//     add_image_size('custom_header_xs',575,481,true); 
-//     add_image_size('custom_header_sm',767,575,true); 
-//     add_image_size('custom_header_md',991,743,true); 
-//     add_image_size('custom_header_lg',1199,899,true); 
-//     add_image_size('custom_header_xl',1399,1049,true); 
-//     add_image_size('custom_header_xxl',1920,1440,true);  
-// }  
-// add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
-//rendre la taille d'image sélectable depuis le back-office
-// add_filter( 'image_size_names_choose', 'my_custom_sizes' );
- 
-// function my_custom_sizes( $sizes ) {
-//     return array_merge( $sizes, array(
-//         'custom_header_xs' => __('Custom Header XS'),
-//         'custom_header_sm' => __('Custom Header sm'),
-//         'custom_header_md' => __('Custom Header md'),
-//         'custom_header_lg' => __('Custom Header lg'),
-//         'custom_header_xl' => __('Custom Header xl'),
-//         'custom_header_xxl' => __('Custom Header xxl'),
-//     ) );
-// }
-// Woocommerce
-function mytheme_add_woocommerce_support() {
-    add_theme_support( 'woocommerce', array(
-            'thumbnail_image_width' => 150,
-            'single_image_width'    => 300,
-
-    'product_grid'          => array(
-        'default_rows'    => 3,
-        'min_rows'        => 2,
-        'max_rows'        => 8,
-        'default_columns' => 4,
-        'min_columns'     => 2,
-        'max_columns'     => 5,
-    ),
-    ) );
-}
-add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
-add_filter( 'wp_title', 'wpdocs_hack_wp_title_for_home' );
- 
 /*Customize the title for the home page, if one is not set.*/
 function wpdocs_hack_wp_title_for_home( $title ){
   if ( empty( $title ) && ( is_home() || is_front_page() ) ) {
@@ -135,3 +69,7 @@ function wpdocs_hack_wp_title_for_home( $title ){
   }
   return $title;
 }
+add_filter( 'wp_title', 'wpdocs_hack_wp_title_for_home' );
+require 'inc/akaleyaboutique-functions.php';
+
+
