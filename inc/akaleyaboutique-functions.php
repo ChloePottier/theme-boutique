@@ -39,4 +39,16 @@ add_action( 'after_setup_theme', 'akaleya_add_woocommerce_support' );
 add_theme_support( 'wc-product-gallery-zoom' );
 add_theme_support( 'wc-product-gallery-lightbox' );
 add_theme_support( 'wc-product-gallery-slider' );
+//afficher titre de la page woocommerce
+function show_title_wc_page(){?>
+    <div class="col-12"><h1><?php woocommerce_page_title() ?></h1></div>
+<?php }
+add_action('title_page_shop','show_title_wc_page');
+//afficher titre du produit
+function show_title_wc_product(){?>
+    <div class="col-12">
+        <h1><?php the_title(); ?></h1>
+    </div>
+<?php }
+add_action('title_product_shop','show_title_wc_product');
 
