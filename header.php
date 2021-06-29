@@ -12,7 +12,6 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
     <?php //get_template_part('google.php');?>
     <?php wp_head(); ?>
-    <title><?php wp_title(''); ?></title>
 </head>
 <body id='top' <?php body_class(); ?>>
     <?php wp_body_open();

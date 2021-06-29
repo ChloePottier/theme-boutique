@@ -18,8 +18,8 @@ function theme_custom_logo_setup() {
         add_theme_support('custom-logo',$defaults);
    }
 add_action('after_setup_theme','theme_custom_logo_setup');
-// Ajouter la prise en charge des images mises en avant
-add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-thumbnails' );// Ajouter la prise en charge des images mises en avant
+add_theme_support( 'title-tag' ); // ajouter <title> à la place de wp_title() dans le header
 //custom header
 function akaleyashop_custom_header_setup() {
 	add_theme_support(
