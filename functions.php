@@ -71,5 +71,7 @@ function wpdocs_hack_wp_title_for_home( $title ){
 }
 add_filter( 'wp_title', 'wpdocs_hack_wp_title_for_home' );
 require 'inc/akaleyaboutique-functions.php';
+require 'inc/akaleyaboutique-hooks.php';
+
 
 

@@ -114,9 +114,13 @@ form label{font-weight: 600;}
 }
 /* content */
 .content-area{height: auto; min-height: 56vh;}
-.woocommerce .woocommerce-breadcrumb{padding: 1rem 0;}
-.product-category a h2{font-weight: 600;}
 footer #copyrightinfo{font-size: .8rem!important;}
+/* WOOCOMMERCE */
+.woocommerce .woocommerce-breadcrumb{padding: 1rem 0;}
+.content-shop{min-height: 2000px;}
+
+.product-category a h2{font-weight: 600;}
+
 /* Grid */
 @media (min-width: 576px) {
     .row-nav{max-width:540px;}
