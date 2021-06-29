@@ -1,0 +1,22 @@
+/* Woocommerce*/
+.woocommerce .woocommerce-breadcrumb{padding: 1rem 0;}
+.content-shop{min-height:100vh;}
+.product-category a,.woocommerce ul.products li.product a,.product_meta a{color:#000; text-transform: uppercase;}
+.product-category a:hover,.woocommerce ul.products li.product a:hover, .product_meta a:hover{color:#727272; }
+.product-category a h2{font-weight: 600;}
+.woocommerce div.product p.price, .woocommerce div.product span.price{color: #000; font-weight: 600;}
+.woocommerce-loop-category__title mark{display: none;}
+.product-category h2,.woocommerce-loop-product__title{text-align: center; font-weight: 600;}
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, 
+.woocommerce button.button.alt, .woocommerce input.button.alt{
+    background: #000;
+}
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover,
+ .woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover{background: #727272;}
+.woocommerce #respond input#submit, .woocommerce a.button, 
+.woocommerce button.button, .woocommerce input.button{
+    border-radius: 0;
+}
+.cart{padding-top: 1.5rem;}
+.quantity input{border-bottom: none;}
+.price{padding: 1rem 0;}
