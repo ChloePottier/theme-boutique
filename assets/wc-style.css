@@ -1,4 +1,6 @@
 /* Woocommerce*/
+.woocommerce,p,a,span{font-family: Helvetica, Arial, sans-serif;}
+.woocommerce-loop-product__title{font-size: 1.3rem;}
 .woocommerce .woocommerce-breadcrumb{padding: 1rem 0;}
 .content-shop{min-height:100vh;}
 .product-category a,.woocommerce ul.products li.product a,.product_meta a{color:#000; text-transform: uppercase;}
@@ -19,4 +21,4 @@
 }
 .cart{padding-top: 1.5rem;}
 .quantity input{border-bottom: none;}
-.price{padding: 1rem 0;}
+.woocommerce ul.products li.product .price{color: #000!important; font-size: 1.2rem; font-style: italic; font-weight:600;padding: 1rem 0;} 

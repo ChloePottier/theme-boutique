@@ -6,32 +6,28 @@ Version:     1.0
 Text Domain:  akaleyaboutique
 Tags:         website,e-commerce, eco-conception
 */
-/* body{margin-top: 0!important;} */
+body{font-family: Helvetica, Arial, sans-serif;}
 a{text-decoration: none;}
 li{list-style: none;}
 ul,p{padding: 0;margin: 0;}
 .bg-cover{background-size: cover !important;}
 .text-shadow{text-shadow: #000 2px 2px 5px;}
+.box-shadow{box-shadow: 0 0 1.3rem #818181;}
 .fw-600{font-weight: 600;}
 .zindex-1{z-index: 1;}
-.zindex-2{z-index: 2;}
-.zindex-3{z-index: 3;}
-/* .zindex-4{z-index: 4;} */
+.zindex-2{z-index: 20;}
+.zindex-3{z-index: 30;}
 /* Colors */
-.akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover,.menu-down a:hover{color: #c9c9c9 !important;}
-.menu-down .current-menu-item a{color: #727272 !important;}
 .text-black,.akaleya a:hover{color: #000 !important;}
 .text-grey-dark,.menu-down a{color:#2e2e2e;}
 .bg-grey-dark{background:#2e2e2e;}
-.box-shadow{box-shadow: 0 0 1.3rem #818181;}
-
-
-    /* Width */
+.menu-down .current-menu-item a{color: #727272 !important;}
+[type='submit']:hover{background: #727272;}
+.akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover,.menu-down a:hover{color: #c9c9c9 !important;}
 .vh-30{height:30vh!important;}
 form, input, textarea{width: 100%;}
 input, textarea{border:none;border-bottom: 2px solid #000; margin-bottom: 1rem;}
 [type='submit']{background: #000;color: #fff;text-transform: uppercase; font-weight: 600;border: none;}
-[type='submit']:hover{background: #727272;}
 form label{font-weight: 600;}
 /* header */
 #navbar{top: 0;}
@@ -40,7 +36,7 @@ form label{font-weight: 600;}
 .menu a{padding-right: 1.5rem; color: #fff;}
 #navigation li{padding-bottom:1rem;}
 #navigation a{font-size: 1.7rem; color: #fff;}
-.menu-down a{padding-right: 1rem; }
+.menu-down a{padding-right: 1.5rem; }
 .custom-header{position: relative; height: 100vh;width: 100%;}
 .custom-header-media {
     bottom: 0;

@@ -1,4 +1,4 @@
-<?php/**
+<?php /**
  * The frontpage template file.
  *
  * @package akaleyaboutique
