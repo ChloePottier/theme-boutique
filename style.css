@@ -7,7 +7,8 @@ Text Domain:  akaleyaboutique
 Tags:         website,e-commerce, eco-conception
 */
 body{font-family: Helvetica, Arial, sans-serif;}
-a{text-decoration: none;}
+a{text-decoration: none; color:#000;}
+a:hover{color: #2e2e2e;}
 li{list-style: none;}
 p{padding: 0; margin: 0;}
 .bg-cover{background-size: cover !important;}
@@ -39,7 +40,8 @@ form label{font-weight: 600; margin-bottom: 1rem;}
 #menu-reseaux-sociaux li{padding-right: 1rem;}
 #menu-reseaux-sociaux li:last-child{padding-right: 0;}
 .menu a,.menu-down a{padding-right: 1.5rem;}
-#navigation li{padding-bottom:1rem;}
+#navigation li,#menu-service-client li{padding-bottom:1rem;}
+#menu-reseaux-sociaux li{font-size: 2rem;}
 #navigation a{font-size: 1.7rem;}
 .custom-header{position: relative; height: 100vh;width: 100%;}
 .custom-header-media {
@@ -121,6 +123,9 @@ footer #copyrightinfo{font-size: .8rem!important;}
 }
 @media (min-width: 768px) {
     .row-nav{max-width:720px;}
+    .nav-footer h3{font-size: 1rem!important;}
+    #menu-service-client{font-size: .8rem!important;}
+    #menu-service-client li{padding-bottom:0;}
 }
 @media (min-width: 992px) {
     .row-nav{max-width:960px;}

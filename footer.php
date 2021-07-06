@@ -3,8 +3,8 @@
         <div class='container'>
             <div class='row fw-bold fst-italic'>
                 <div class='col-12 col-md-6 text-center text-md-start nav-footer' >
-                    <h3 class='fw-bold text-uppercase fs-6'>Service client</h3>
-                    <?php wp_nav_menu( array( 'theme_location' => 'subfooter-menu','menu_class' => 'menu-subfooter p-0 fs-7','container' => 'nav' ) ); ?>
+                    <h3 class='fw-bold text-uppercase fs-5'>Service client</h3>
+                    <?php wp_nav_menu( array( 'theme_location' => 'subfooter-menu','menu_class' => 'menu-subfooter p-0 fs-6','container' => 'nav' ) ); ?>
                 </div>
                 <div class='col-12 col-md-6 text-center text-md-end'></div>
             </div>

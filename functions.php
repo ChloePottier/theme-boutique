@@ -15,8 +15,10 @@ function akaleyashop_setup(){
     )  ); 
   add_theme_support( 'post-thumbnails' );// Ajouter la prise en charge des images mises en avant
   add_theme_support( 'title-tag' ); // ajouter <title> à la place de wp_title() dans le header  
-  //custom header
-  add_theme_support(
+}
+//custom header
+function akaleyashop_custom_header_setup() {
+	add_theme_support(
 		'custom-header',
 		apply_filters(
 			'akaleyashop_custom_header_args',
@@ -25,10 +27,10 @@ function akaleyashop_setup(){
 				'width'            => 2000,
 				'height'           => 1200,
 				'flex-height'      => true,
+				'video'            => true,
 			)
 		)
 	);
-  //image header par defaut
 	register_default_headers(
 		array(
 			'default-image' => array(
@@ -38,9 +40,7 @@ function akaleyashop_setup(){
 			),
 		)
 	);
-
 }
-
 function wpm_myme_types($mime_types){
     $mime_types['svg'] = 'image/svg+xml'; //On autorise les .svg
     $mime_types['webp'] = 'image/webp'; //On autorise les .webp
@@ -54,7 +54,6 @@ function register_nav() {
         'shop-menu' => __( 'Shop Menu' ),
         'subfooter-menu' => __( 'Footer 1 Menu' ),
         'footer-menu' => __( 'Footer 2 Menu' ),
-
        ));
    }
    function cpt_faq_init() {
