@@ -9,11 +9,11 @@ Tags:         website,e-commerce, eco-conception
 body{font-family: Helvetica, Arial, sans-serif;}
 a{text-decoration: none;}
 li{list-style: none;}
-ul,ol,p{padding-left: 0!important; }
+p{padding: 0; margin: 0;}
 .bg-cover{background-size: cover !important;}
 .text-shadow{text-shadow: #000 2px 2px 5px;}
 .box-shadow{box-shadow: 0 0 1.3rem #818181;}
-.border-top-black{border-top: #000 solid 2px;}
+/* .border-top-black{border-top: #000 solid 2px;} */
 .fw-600{font-weight: 600;}
 .fs-7{font-size: .8rem;}
 .zindex-1{z-index: 1;}
@@ -26,19 +26,21 @@ ul,ol,p{padding-left: 0!important; }
 .menu-down .current-menu-item a,.nav-footer a:hover{color: #727272 !important;}
 [type='submit']:hover{background: #727272;}
 .akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover,.menu-down a:hover{color: #c9c9c9 !important;}
+.menu a,#navigation a,[type='submit']{color: #fff;}
 .vh-30{height:30vh!important;}
 form, input, textarea, form label{width: 100%;}
 input, textarea{border:none;border-bottom: 2px solid #000; margin-bottom: 1rem;}
-[type='submit']{background: #000;color: #fff;text-transform: uppercase; font-weight: 600;border: none; padding: 1rem 0;}
-form label{font-weight: 600;}
+[type='submit']{background: #000;text-transform: uppercase; font-weight: 600;border: none; padding: 1rem 0;}
+form label{font-weight: 600; margin-bottom: 1rem;}
 /* header */
 #navbar{top: 0;}
 .row-nav{width: 100%;}
 #menu-top-md #menu-header,#menu-shop{display: flex;}
-.menu a{padding-right: 1.5rem; color: #fff;}
+#menu-reseaux-sociaux li{padding-right: 1rem;}
+#menu-reseaux-sociaux li:last-child{padding-right: 0;}
+.menu a,.menu-down a{padding-right: 1.5rem;}
 #navigation li{padding-bottom:1rem;}
-#navigation a{font-size: 1.7rem; color: #fff;}
-.menu-down a{padding-right: 1.5rem; }
+#navigation a{font-size: 1.7rem;}
 .custom-header{position: relative; height: 100vh;width: 100%;}
 .custom-header-media {
     bottom: 0;
