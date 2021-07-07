@@ -34,3 +34,4 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 3
 //suppression nombre de résultat
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 
+

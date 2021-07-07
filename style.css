@@ -41,7 +41,7 @@ form label{font-weight: 600; margin-bottom: 1rem;}
 #menu-reseaux-sociaux li:last-child{padding-right: 0;}
 .menu a,.menu-down a{padding-right: 1.5rem;}
 #navigation li,#menu-service-client li{padding-bottom:1rem;}
-#menu-reseaux-sociaux li{font-size: 2rem;}
+#menu-reseaux-sociaux li,#not-found{font-size: 2rem;}
 #navigation a{font-size: 1.7rem;}
 .custom-header{position: relative; height: 100vh;width: 100%;}
 .custom-header-media {
