@@ -31,4 +31,6 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_p
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10 );
 //suppression tri des produits
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+//suppression nombre de résultat
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 
