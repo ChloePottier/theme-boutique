@@ -11,7 +11,7 @@ function wp_styles_scripts(){
 function akaleyashop_setup(){
   add_theme_support('custom-logo', array(
     'height'      => 80,
-    // 'flex-width'  => true,
+    'flex-width'  => true,
     )  ); 
   add_theme_support( 'post-thumbnails' );// Ajouter la prise en charge des images mises en avant
   add_theme_support( 'title-tag' ); // ajouter <title> à la place de wp_title() dans le header  
@@ -27,7 +27,6 @@ function akaleyashop_custom_header_setup() {
 				'width'            => 2000,
 				'height'           => 1200,
 				'flex-height'      => true,
-				'video'            => true,
 			)
 		)
 	);
@@ -52,8 +51,8 @@ function register_nav() {
       array(
         'header-menu' => __( 'Header Menu' ),
         'shop-menu' => __( 'Shop Menu' ),
-        'subfooter-menu' => __( 'Footer 1 Menu' ),
-        'footer-menu' => __( 'Footer 2 Menu' ),
+        'subfooter-menu' => __( 'Footer Menu' ),
+        'footer-menu' => __( 'Social Link Menu' ),
        ));
    }
    function cpt_faq_init() {

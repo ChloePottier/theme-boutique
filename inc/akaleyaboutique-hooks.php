@@ -29,7 +29,6 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 ); //display category name
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 20 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10 );
-
-
-
+//suppression tri des produits
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 
