@@ -5,7 +5,7 @@
  * @package akaleyaboutique
  */
 get_header(); ?>
-<div id='post-<?php echo $post->ID; ?>' class='content-area container-fluid pb-5 bg-white position-relative'>
+<div id='archive-faq' class='content-area container-fluid pb-5 bg-white position-relative'>
    <main id='main' class='site-main container position-relative' role='main'>
        <h1 class='py-5'>Foire aux questions</h1>
     <?php if (have_posts()) :

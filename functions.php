@@ -78,20 +78,12 @@ function register_nav() {
         'has_archive'        => true,
         'menu_position'      => null,
         'menu_icon'          => 'dashicons-editor-help',
-        'supports'           => array( 'title', 'editor'),
+        'supports'           => array( 'title', 'editor','category'),
     ); 
     register_post_type( 'faq', $args );
+    register_taxonomy_for_object_type('category','faq');
     } 
 require 'inc/akaleyaboutique-functions.php';
 require 'inc/akaleyaboutique-hooks.php';
-/**
- * Proper ob_end_flush() for all levels
- *
- * This replaces the WordPress `wp_ob_end_flush_all()` function
- * with a replacement that doesn't cause PHP notices.
- */
-remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
-add_action( 'shutdown', function() {
-   while ( @ob_end_flush() );
-} );
+
 

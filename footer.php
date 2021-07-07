@@ -1,5 +1,5 @@
     
-    <div class='container-fluid bg-white py-4 position-relative' id='subfooter'>
+    <div class='container-fluid bg-white py-4 position-relative border-top' id='subfooter'>
         <div class='container'>
             <div class='row fw-bold fst-italic'>
                 <div class='col-12 col-md-6 text-center text-md-start nav-footer' >
@@ -10,8 +10,8 @@
             </div>
         </div>
     </div>
-    <footer class='site-footer container-fluid py-3 bg-white position-relative border-top' role='contentinfo'>
-        <div class='container pt-4'>
+    <footer class='site-footer container-fluid py-4 bg-white position-relative border-top' role='contentinfo'>
+        <div class='container'>
             <div class='row flex-md-row-reverse'>
                 <div class='col-12 col-md-6 fs-2 nav-footer'>
                     <?php wp_nav_menu( array( 'theme_location' => 'footer-menu','menu_class' => 'menu-footer p-0 d-flex flex-row justify-content-center justify-content-md-end','container' => 'nav' ) ); ?>
