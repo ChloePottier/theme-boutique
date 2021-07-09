@@ -8,7 +8,11 @@
 .woocommerce form .form-row {padding: 1rem 0; margin: 0 0 6px;}
 .woocommerce-MyAccount-navigation,.woocommerce-Addresses{padding-bottom: 2rem;}
 .woocommerce-account .addresses .title h3{float:none;}
+.woocommerce ul.order_details,.woocommerce-order{margin: 1rem 0!important;}
 .woocommerce-Address-title{padding-top: 2rem;}
+.woocommerce .page-title{padding-bottom: 1rem;}
+.woocommerce-MyAccount-navigation ul{padding-left:0!important;background: #f3f3f3;}
+.woocommerce-MyAccount-navigation li{text-align: center; padding: .5rem 0; }
 .woocommerce-MyAccount-navigation a{color:#000;}
 .woocommerce-MyAccount-navigation a:hover,.product-category a:hover,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link:hover{color:#727272;}
@@ -29,8 +33,7 @@ address {
 .woocommerce div.product p.price, .woocommerce div.product span.price,.woocommerce ul.products li.product .price{color: #000; font-weight: 600;font-size: 1.5rem;}
 .woocommerce-loop-category__title mark{display: none;}
 .product-category h2,.woocommerce-loop-product__title{text-align: center; font-weight: 600;}
-/* .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{background: #000;} */
-
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{background: #000;}
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, 
 .woocommerce button.button.woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce button{background: #000;}
@@ -41,8 +44,29 @@ address {
 .woocommerce button.button, .woocommerce input.button{border-radius: 0;}
 .cart{padding-top: 1.5rem;}
 .quantity input{border-bottom: none;}
-/* .woocommerce ul.products li.product .price{color: #000!important; font-size: 1rem; padding: 1.3rem 0;}  */
-.woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
-    top:0;
+.woocommerce ul.products li.product .price{text-align: center;} 
+.woocommerce form .show-password-input, .woocommerce-page form .show-password-input {top:0;}
+.woocommerce a.added_to_cart{padding: .5rem 0 0 .3rem;}
+.woocommerce ul.products li.product .button {text-align: center;display: block;background: #fff;color: #727272; font-size: .8rem;}
+.woocommerce ul.products li.product .button:hover{color: #000;} 
+
+/* Grid */
+/* @media (min-width: 576px) {
+ 
+}
+@media (min-width: 768px) {
+
+} */
+@media (min-width: 992px) {
+    .woocommerce-MyAccount-navigation li{text-align: left; padding: .5rem 0 .5rem 1rem;}
+    .woocommerce-MyAccount-navigation ul{width: 80%;}
+
 }
 
+ @media (min-width: 1200px) {
+    .woocommerce-MyAccount-navigation li{padding: .7rem 0 .7rem 1rem;}
+
+}
+/*
+@media (min-width: 1400px) {
+} */

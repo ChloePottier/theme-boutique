@@ -11,7 +11,7 @@
             while (have_posts()) : the_post(); ?>
                     <section class='row' id='contact'>
                         <div class='col-12'>
-                            <h1><?php the_title(); ?></h1>
+                            <h1 class='pb-3'><?php the_title(); ?></h1>
                         </div>
                         <div class="col-12">
                             <?php the_content(); ?> 

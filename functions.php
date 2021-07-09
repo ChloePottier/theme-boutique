@@ -4,7 +4,7 @@ function wp_styles_scripts(){
   wp_enqueue_script('jquery');
   wp_enqueue_script('bootstrap-js', ''.get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.js', array('jquery', 'popper'), 1, true);
   wp_enqueue_style('font-awesome', get_template_directory_uri() .'/assets/font-awesome/css/all.css');
-  wp_enqueue_style('print', get_template_directory_uri() .'/assets/print.css');
+  wp_enqueue_style('print', get_template_directory_uri() .'/assets/print.css',array(),'1.0','print');
   wp_enqueue_style('woocommerce', get_template_directory_uri() .'/assets/wc-style.css');
   wp_enqueue_style('style', get_stylesheet_uri());
 }
@@ -27,6 +27,7 @@ function akaleyashop_custom_header_setup() {
 				'width'            => 2000,
 				'height'           => 1200,
 				'flex-height'      => true,
+        'flex-width'      => true,
 			)
 		)
 	);

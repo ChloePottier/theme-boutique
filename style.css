@@ -10,11 +10,10 @@ body{font-family: Helvetica, Arial, sans-serif;}
 a,#nav-faq div a{text-decoration: none; color:#727272;}
 a:hover{color: #000;}
 li{list-style: none;}
-p{padding: 0; margin: 0;}
+/* p{padding: 0; margin: 0;} */
 .bg-cover{background-size: cover !important;}
 .text-shadow{text-shadow: #000 2px 2px 5px;}
 .box-shadow{box-shadow: 0 0 1.3rem #818181;}
-/* .border-top-black{border-top: #000 solid 2px;} */
 .fw-600{font-weight: 600;}
 .fs-7{font-size: .8rem;}
 .zindex-1{z-index: 1;}
@@ -29,7 +28,7 @@ p{padding: 0; margin: 0;}
 .akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover,.menu-down a:hover{color: #c9c9c9 !important;}
 .menu a,#navigation a,[type='submit'],button{color: #fff;}
 .vh-30{height:30vh!important;}
-form, input, textarea, form label{width: 100%;}
+form, input[type='submit'],input[type='text'],input[type='email'], textarea, form p label{width: 100%;}
 input, textarea{border:none;border-bottom: 2px solid #000; margin-bottom: 1rem;}
 [type='submit'],button{background: #000;text-transform: uppercase; font-weight: 600;border: none; padding: 1rem 0;}
 form label{font-weight: 600; margin-bottom: 1rem;}
@@ -116,6 +115,8 @@ form label{font-weight: 600; margin-bottom: 1rem;}
 /* content */
 .content-area{height: auto; min-height: 56vh;}
 footer #copyrightinfo{font-size: .8rem!important;}
+.woocommerce ul.order_details,.woocommerce-order p{margin: 1rem 0!important;}
+
 /* Grid */
 @media (min-width: 576px) {
     .row-nav{max-width:540px;}

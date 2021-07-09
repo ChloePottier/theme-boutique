@@ -1,1 +1,19 @@
-.menu-top-md{display: flex;}
+.menu-top-md,#navbar .d-none{display: block!important;}
+#navigation,#nav-burger,.custom-header,.custom-header-small,#subfooter,.menu-shop-container,.product-template-default .cart,
+ #masthead,.woocommerce-MyAccount-navigation{display: none!important;}
+ .home #masthead{display: block!important;}
+ .text-shadow{text-shadow: none!important;}
+.menu a{color:#000;}
+.vh-100,.vh-30{height: auto!important;}
+#navbar{position: relative!important;background: #fff;}
+#navbar ul{padding-left: 0!important;}
+input[type="submit"]{background: #c6c6c6;color:#fff;}
+button[type="submit"]{visibility: hidden;}
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, 
+.woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary,
+.woocommerce #content div.product div.images, .woocommerce div.product div.images,
+ .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images,
+ .woocommerce-account .woocommerce-MyAccount-content, .woocommerce .cart-collaterals .cart_totals, 
+ .woocommerce-page .cart-collaterals .cart_totals {width: 100%;}
+.content-area{height: auto; min-height: none;}
+
