@@ -24,7 +24,7 @@ li{list-style: none;}
 .text-grey-dark,.menu-down a{color:#2e2e2e!important;}
 .bg-grey-dark{background:#2e2e2e;}
 .menu-down .current-menu-item a,.nav-footer a:hover{color: #727272 !important;}
-[type='submit']:hover,button:hover{background: #727272;}
+[type='submit']:hover,.button:hover{background: #727272;}
 .akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover,.menu-down a:hover{color: #c9c9c9 !important;}
 .menu a,#navigation a,[type='submit'],button{color: #fff;}
 .vh-30{height:30vh!important;}
