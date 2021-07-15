@@ -30,6 +30,7 @@ li{list-style: none;}
 .vh-30{height:30vh!important;}
 form, input[type='submit'],input[type='text'],input[type='email'], textarea, form p label{width: 100%;}
 input, textarea{border:none;border-bottom: 2px solid #000; margin-bottom: 1rem;}
+textarea{height:8rem;}
 [type='submit'],button{background: #000;text-transform: uppercase; font-weight: 600;border: none; padding: 1rem 0;}
 form label{font-weight: 600; margin-bottom: 1rem;}
 /* header */

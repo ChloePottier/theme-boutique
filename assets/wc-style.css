@@ -56,18 +56,15 @@ address {
 .woocommerce ul.products li.product .price{text-align: center;} 
 .woocommerce form .show-password-input, .woocommerce-page form .show-password-input {top:0;}
 .woocommerce a.added_to_cart{padding: 1rem .5rem; width: 60%;word-break: break-all;}
-.woocommerce ul.products li.product .button,.woocommerce a.added_to_cart{text-align: center; background: #fff; 
-    border: #ccc solid 1px; 
-    color: #727272!important;  position: absolute;left: 50%;transform: translateX(-50%); width:100%;}
+.woocommerce ul.products li.product .button,.woocommerce a.added_to_cart{text-align: center; background: #fff;border: #ccc solid 1px;color: #727272!important;  position: absolute;left: 50%;transform: translateX(-50%); width:100%;}
 .woocommerce ul.products li.product .button{ font-size: .8rem;}
-input[type='number']  {
-    -webkit-appearance: none;
-    -moz-appearance: textfield;
-}
+input[type='number']  {-webkit-appearance: none; -moz-appearance: textfield;}
+select{border-radius: 0; padding: .5rem .3rem; border: #ccc solid 1px;}
+.label{width: 120px;}
+form table label{margin-bottom: 0;}
 .woocommerce .quantity .qty{border: #ccc solid 1px;}
 .woocommerce-tabs .related h2{height:55px;}
-.woocommerce div.product .woocommerce-tabs{
-    margin: 0 0 5rem;}
+.woocommerce div.product .woocommerce-tabs{margin: 0 0 5rem;}
 
 /* Grid */
 /* @media (min-width: 576px) {
@@ -81,12 +78,10 @@ input[type='number']  {
     .woocommerce-MyAccount-navigation ul{width: 80%;}
     .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals{width: 48%;}
     .woocommerce ul.products li.product .button{width: auto;}
-
 }
 
  @media (min-width: 1200px) {
     .woocommerce-MyAccount-navigation li{padding: .7rem 0 .7rem 1rem;}
-
 }
 /*
 @media (min-width: 1400px) {
