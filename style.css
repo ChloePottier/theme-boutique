@@ -117,7 +117,8 @@ form label{font-weight: 600; margin-bottom: 1rem;}
 .content-area{height: auto; min-height: 56vh;}
 footer #copyrightinfo{font-size: .8rem!important;}
 .woocommerce ul.order_details,.woocommerce-order p{margin: 1rem 0!important;}
-
+.item-faq{border-bottom: 1px solid #dee2e6;}
+.item-faq:last-child{border-bottom: none;}
 /* Grid */
 @media (min-width: 576px) {
     .row-nav{max-width:540px;}

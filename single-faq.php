@@ -7,6 +7,9 @@
 <?php get_header(); ?>
 <div id='primary' class='content-area container-fluid bg-white position-relative'>
     <main id='main' class='site-main front-page container py-5' role='main'>
+    <?php if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb( '<nav id="breadcrumbs" itemprop="breadcrumb" class="pb-3">','</nav>' );
+        } ?> 
         <?php if (have_posts()) :
             while (have_posts()) : the_post(); ?>
                 <section class='row' id=''>
@@ -19,10 +22,10 @@
                 </section>
                 <div id='nav-faq' class='d-flex justify-content-between pt-5'>
                     <div>
-                    <?php previous_post_link('%link', '&lsaquo; %title'); ?>
+                    <?php next_post_link('%link', '&lsaquo; %title'); ?>
                     </div>
                     <div>
-                    <?php next_post_link('%link','%title &rsaquo;'); ?>
+                    <?php previous_post_link('%link','%title &rsaquo;'); ?>
                     </div>
                 </div>
     <?php endwhile;
