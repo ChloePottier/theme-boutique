@@ -20,18 +20,17 @@ li{list-style: none;}
 .zindex-2{z-index: 20;}
 .zindex-3{z-index: 30;}
 /* Colors */
-.text-black,.akaleya a:hover,.nav-footer a,#nav-faq div a:hover{color: #000 !important;}
+.text-black,.akaleya a:hover,.nav-footer a,#nav-faq div a:hover,[type='submit']:hover,.button:hover{color: #000 !important;}
 .text-grey-dark,.menu-down a{color:#2e2e2e!important;}
 .bg-grey-dark{background:#2e2e2e;}
 .menu-down .current-menu-item a,.nav-footer a:hover{color: #727272 !important;}
-[type='submit']:hover,.button:hover{background: #727272;}
 .akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover,.menu-down a:hover{color: #c9c9c9 !important;}
-.menu a,#navigation a,[type='submit'],button{color: #fff!important;}
+.menu a,#navigation a{color: #fff!important;}
 .vh-30{height:30vh!important;}
 form, input[type='submit'],input[type='text'],input[type='email'], textarea, form p label{width: 100%;}
 input, textarea{border:none;border-bottom: 2px solid #000; margin-bottom: 1rem;}
 textarea{height:8rem;}
-[type='submit'],button{background: #000;text-transform: uppercase; font-weight: 600;border: none; padding: 1rem 0;}
+[type='submit'],button{background: #fff;text-transform: uppercase; font-weight: 600;border: #ccc solid 1px; padding: 1rem 0;color: #727272;}
 form label{font-weight: 600; margin-bottom: 1rem;}
 /* header */
 #navbar{top: 0;}
@@ -119,6 +118,18 @@ footer #copyrightinfo{font-size: .8rem!important;}
 .woocommerce ul.order_details,.woocommerce-order p{margin: 1rem 0!important;}
 .item-faq{border-bottom: 1px solid #dee2e6;}
 .item-faq:last-child{border-bottom: none;}
+.wp-block-button__link{
+background-color: #fff;
+border: none;
+border-radius: 0em;
+box-shadow: none;
+cursor: pointer;
+display: inline-block;
+font-size: 1.125em;
+padding: .667em 1.333em;
+text-align: center;
+text-decoration: none;
+overflow-wrap: break-word;}
 /* Grid */
 @media (min-width: 576px) {
     .row-nav{max-width:540px;}
