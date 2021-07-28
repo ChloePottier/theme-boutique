@@ -119,8 +119,8 @@ footer #copyrightinfo{font-size: .8rem!important;}
 .item-faq{border-bottom: 1px solid #dee2e6;}
 .item-faq:last-child{border-bottom: none;}
 .wp-block-button__link{
-background-color: #fff;
-border: none;
+background-color: transparent;
+border: #fff solid 1px;
 border-radius: 0em;
 box-shadow: none;
 cursor: pointer;
@@ -130,6 +130,9 @@ padding: .667em 1.333em;
 text-align: center;
 text-decoration: none;
 overflow-wrap: break-word;}
+.wp-block-cover__inner-container a{color: #fff!important;}
+.wp-block-cover__inner-container a:hover{color: #000!important;}
+
 /* Grid */
 @media (min-width: 576px) {
     .row-nav{max-width:540px;}

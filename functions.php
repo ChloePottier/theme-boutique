@@ -87,10 +87,6 @@ function register_nav(){
        register_post_type('faq', $args);
        register_taxonomy_for_object_type('category', 'faq');
    }
-function wp_ob_end_flush_all(){
-    //$levels = ob_get_level();
-  //for ($i=0; $i<$levels; $i++)
-  //	ob_end_flush();
-}
+
 require 'inc/akaleyaboutique-functions.php';
 require 'inc/akaleyaboutique-hooks.php';
