@@ -18,7 +18,7 @@
     <?php wp_body_open();
     if(is_front_page()): ?>
         <header  id='masthead' class='position-relative vh-100 overflow-hidden'>
-            <div class='container-fluid position-fixed zindex-3  text-shadow' id='navbar'>
+            <div class='container-fluid position-fixed zindex-3 bg-white' id='navbar'>
                 <div class='container'>
                 <?php get_template_part('template-parts/navigation/navigation','top'); ?>
                 </div>
@@ -37,7 +37,7 @@
                     </div>  
             </div>
         </header>
-        <div class='container-fluid position-fixed zindex-3  text-shadow' id='navbar'>
+        <div class='container-fluid position-fixed zindex-3 bg-white' id='navbar'>
                 <div class='container'>
                     <?php get_template_part('template-parts/navigation/navigation','top'); ?>
                 </div>

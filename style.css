@@ -21,11 +21,11 @@ li{list-style: none;}
 .zindex-3{z-index: 30;}
 /* Colors */
 .text-black,.akaleya a:hover,.nav-footer a,#nav-faq div a:hover,[type='submit']:hover,.button:hover{color: #000 !important;}
-.text-grey-dark,.menu-down a{color:#2e2e2e!important;}
+.text-grey-dark,.menu a, #burger span{color:#2e2e2e!important;}
 .bg-grey-dark{background:#2e2e2e;}
-.menu-down .current-menu-item a,.nav-footer a:hover{color: #727272 !important;}
-.akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover,.menu-down a:hover{color: #c9c9c9 !important;}
-.menu a,#navigation a{color: #fff!important;}
+.nav-footer a:hover{color: #727272 !important;}
+.akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover{color: #c9c9c9 !important;}
+#navigation a{color: #fff!important;}
 .vh-30{height:30vh!important;}
 form, input[type='submit'],input[type='text'],input[type='email'], textarea, form p label{width: 100%;}
 input, textarea{border:none;border-bottom: 2px solid #000; margin-bottom: 1rem;}

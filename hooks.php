@@ -16,5 +16,9 @@ add_action( 'shutdown', function() {
   //	ob_end_flush();
 
 } );
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+add_filter( 'login_headertext', 'my_login_logo_url_title' );
+
 
 

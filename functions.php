@@ -13,8 +13,8 @@ function akaleyashop_setup(){
     'height'      => 80,
     'flex-width'  => true,
     ));
-    add_theme_support('post-thumbnails');// Ajouter la prise en charge des images mises en avant
-  add_theme_support('title-tag'); // ajouter <title> à la place de wp_title() dans le header
+    add_theme_support('post-thumbnails');
+  add_theme_support('title-tag');
 }
 function akaleyashop_custom_header_setup(){
     add_theme_support(
@@ -26,10 +26,7 @@ function akaleyashop_custom_header_setup(){
                 'width'            => 2000,
                 'height'           => 1200,
                 'flex-height'      => true,
-            )
-        )
-    );
-
+            )));
     register_default_headers(
         array(
             'default-image' => array(
@@ -37,11 +34,9 @@ function akaleyashop_custom_header_setup(){
                 'thumbnail_url' => '%s/images/cropped-gabarit-image-header.jpg',
                 'description'   => __('Default Header Image', 'akaleyashop'),
             ),
-        )
-    );
+        ));
 }
 add_action('after_setup_theme', 'akaleyashop_custom_header_setup');
-
 function wpm_myme_types($mime_types){
     $mime_types['svg'] = 'image/svg+xml'; //On autorise les .svg
     $mime_types['webp'] = 'image/webp'; //On autorise les .webp
@@ -55,11 +50,9 @@ function register_nav(){
         'shop-menu' => __('Shop Menu'),
         'subfooter-menu' => __('Footer Menu'),
         'footer-menu' => __('Social Link Menu'),
-       )
-    );
+       ));
 }
-   function cpt_faq_init()
-   {
+   function cpt_faq_init() {
        $labels = array(
         'name'                  => _x('FAQ', 'Post type general name', 'textdomain'),
         'singular_name'         => _x('FAQ', 'Post type singular name', 'textdomain'),
@@ -87,6 +80,22 @@ function register_nav(){
        register_post_type('faq', $args);
        register_taxonomy_for_object_type('category', 'faq');
    }
+   function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_template_directory_uri(); ?>/images/logo.jpg);
+		background-repeat: no-repeat;
+        padding-bottom: 30px;
+        }
+    </style>
+<?php }
+
+function my_login_logo_url() {
+    return home_url();
+}
+function my_login_logo_url_title() {
+    return get_bloginfo('description');
+}
 
 require 'inc/akaleyaboutique-functions.php';
 require 'inc/akaleyaboutique-hooks.php';
