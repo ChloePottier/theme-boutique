@@ -48,7 +48,6 @@ function register_nav(){
     register_nav_menus(
         array(
         'header-menu' => __('Header Menu'),
-        'shop-menu' => __('Shop Menu'),
         'subfooter-menu' => __('Footer Menu'),
         'footer-menu' => __('Social Link Menu'),
        ));

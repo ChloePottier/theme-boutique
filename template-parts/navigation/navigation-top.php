@@ -8,7 +8,6 @@
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
     </div>
     <div class='col-6 col-md-5 col-lg-2 fs-3 d-flex flex-row justify-content-end' >
-        <?php //wp_nav_menu( array( 'theme_location' => 'shop-menu', 'menu_class' => 'pt-4 menu') ); ?>
         <ul id='menu-shop' class='pt-4 menu'>
             <li>
                 <a href='<?php get_template_directory_uri(); ?>/mon-compte/'><i class="fas fa-user"></i></a>
