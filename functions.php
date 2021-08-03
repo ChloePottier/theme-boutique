@@ -15,28 +15,29 @@ function akaleyashop_setup(){
     ));
     add_theme_support('post-thumbnails');
   add_theme_support('title-tag');
-}
-function akaleyashop_custom_header_setup(){
-    add_theme_support(
-        'custom-header',
-        apply_filters(
-            'akaleyashop_custom_header_args',
-            array(
-                'default-image'    => get_parent_theme_file_uri('/images/cropped-gabarit-image-header.jpg'),
-                'width'            => 2000,
-                'height'           => 1200,
-                'flex-height'      => true,
-            )));
-    register_default_headers(
+  add_theme_support(
+    'custom-header',
+    apply_filters(
+        'akaleyashop_custom_header_args',
         array(
-            'default-image' => array(
-                'url'           => '%s/images/cropped-gabarit-image-header.jpg',
-                'thumbnail_url' => '%s/images/cropped-gabarit-image-header.jpg',
-                'description'   => __('Default Header Image', 'akaleyashop'),
-            ),
-        ));
+            'default-image'    => get_parent_theme_file_uri('/images/cropped-gabarit-image-header.jpg'),
+            'width'            => 2000,
+            'height'           => 1200,
+            'flex-height'      => true,
+        )));
+register_default_headers(
+    array(
+        'default-image' => array(
+            'url'           => '%s/images/cropped-gabarit-image-header.jpg',
+            'thumbnail_url' => '%s/images/cropped-gabarit-image-header.jpg',
+            'description'   => __('Default Header Image', 'akaleyashop'),
+        ),
+    ));
 }
-add_action('after_setup_theme', 'akaleyashop_custom_header_setup');
+// function akaleyashop_custom_header_setup(){
+    
+// }
+// add_action('after_setup_theme', 'akaleyashop_custom_header_setup');
 function wpm_myme_types($mime_types){
     $mime_types['svg'] = 'image/svg+xml'; //On autorise les .svg
     $mime_types['webp'] = 'image/webp'; //On autorise les .webp
@@ -89,7 +90,7 @@ function register_nav(){
         }
     </style>
 <?php }
-
+//Logo page connexion BO
 function my_login_logo_url() {
     return home_url();
 }

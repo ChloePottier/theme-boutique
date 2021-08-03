@@ -1,7 +1,7 @@
 /* Woocommerce*/
 .woocommerce,p,a,span{font-family: Helvetica, Arial, sans-serif;}
 .woocommerce-loop-product__title{font-size: 1.3rem;}
-.woocommerce-privacy-policy-text,.woocommerce-LostPassword{font-size: .8rem;}
+.woocommerce-privacy-policy-text,.woocommerce-LostPassword,.woocommerce ul.products li.product .button,#menu-shop .count{font-size: .8rem;}
 .woocommerce .woocommerce-breadcrumb{padding: 1rem 0;}
 .woocommerce div.product .product_title,.price{font-weight: 600; font-style: italic;}
 .content-shop{min-height:80vh;}
@@ -45,7 +45,6 @@ address{margin-bottom: 1rem; font-style: normal; line-height: inherit; backgroun
 .woocommerce form .show-password-input, .woocommerce-page form .show-password-input {top:0;}
 .woocommerce a.added_to_cart{padding: 1rem .5rem; width: 60%;word-break: break-all;}
 .woocommerce ul.products li.product .button,.woocommerce a.added_to_cart{font-weight:600;text-align: center; background: #fff;border: #ccc solid 1px;color: #727272!important;  position: absolute;left: 50%;transform: translateX(-50%); width:100%;}
-.woocommerce ul.products li.product .button{ font-size: .8rem;}
 input[type='number']  {-webkit-appearance: none; -moz-appearance: textfield;}
 select{border-radius: 0; padding: .5rem .3rem; border: #ccc solid 1px;}
 .label{width: 120px;}
