@@ -10,10 +10,10 @@
     <div class='col-6 col-md-5 col-lg-2 fs-3 d-flex flex-row justify-content-end' >
         <ul id='menu-shop' class='pt-4 menu'>
             <li>
-                <a href='<?php get_template_directory_uri(); ?>/mon-compte/'><i class="fas fa-user"></i></a>
+                <a href='<?php get_template_directory_uri(); ?>/mon-compte/' class='d-flex flex-row align-items-center'><i class='fas fa-user'></i></a>
             </li>
             <li>
-                <a href='<?php get_template_directory_uri(); ?>/panier/'><i class="fas fa-shopping-bag"></i> <span class='count fw-bold fst-italic'><?php echo '('.WC()->cart->get_cart_contents_count().')'; ?></span></a>
+                <a href='<?php get_template_directory_uri(); ?>/panier/' class='d-flex flex-row align-items-center'><i class='fas fa-shopping-bag'></i> <span class='ps-1 count fw-bold fst-italic'><?php echo '('.WC()->cart->get_cart_contents_count().')'; ?></span></a>
             </li>
         </ul>
         
