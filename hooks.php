@@ -8,10 +8,10 @@ add_action( 'init', 'cpt_faq_init' );
 /** Proper ob_end_flush() for all levels
  * This replaces the WordPress `wp_ob_end_flush_all()` function
  * with a replacement that doesn't cause PHP notices. */
-// remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
-// add_action( 'shutdown', function() {
-//    while ( @ob_end_flush() );
-// } );
+remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
+add_action( 'shutdown', function() {
+   while ( @ob_end_flush() );
+} );
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 add_filter( 'login_headerurl', 'my_login_logo_url' );
 add_filter( 'login_headertext', 'my_login_logo_url_title' );
