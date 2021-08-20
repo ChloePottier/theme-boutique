@@ -1,5 +1,6 @@
+#logoprint{display: block;}
 .menu-top-md,#navbar .d-none{display: block!important;}
-#navigation,#nav-burger,.custom-header,.custom-header-small,#subfooter,.menu-shop-container,.product-template-default .cart,
+#navbar,#navigation,#nav-burger,.custom-header,.custom-header-small,#subfooter,.menu-shop-container,.product-template-default .cart,
  #masthead,.woocommerce-MyAccount-navigation{display: none!important;}
  .home #masthead{display: block!important;}
  .text-shadow{text-shadow: none!important;}

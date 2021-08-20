@@ -7,6 +7,7 @@ Text Domain:  akaleyaboutique
 Tags:         website,e-commerce, eco-conception
 */
 body{font-family: Helvetica, Arial, sans-serif;}
+#logoprint{display: none;}
 a,#nav-faq div a{text-decoration: none; color:#727272!important;}
 a:hover{color: #000!important;}
 li{list-style: none;}
@@ -28,6 +29,7 @@ li{list-style: none;}
 #navigation a{color: #fff!important;}
 .vh-30{height:30vh!important;}
 form, input[type='submit'],input[type='text'],input[type='email'], textarea, form p label{width: 100%;}
+form, input[type='submit'],input[type='text'],input[type='email'], textarea, form p label{width: 100%;}
 input, textarea{border:none;border-bottom: 2px solid #000; margin-bottom: 1rem;}
 textarea{height:8rem;}
 [type='submit'],button{background: #fff;text-transform: uppercase; font-weight: 600;border: #ccc solid 1px; padding: 1rem 0;color: #727272;}
@@ -35,6 +37,7 @@ form label{font-weight: 600; margin-bottom: 1rem;}
 /* header */
 #navbar{top: 0;}
 .row-nav{width: 100%;}
+ul.sub-menu li{position: relative;}
 #menu-top-md #menu-header,#menu-shop{display: flex;}
 #menu-reseaux-sociaux li{padding-right: 1rem;}
 #menu-reseaux-sociaux li:last-child{padding-right: 0;}
@@ -147,6 +150,7 @@ overflow-wrap: break-word;}
 @media (min-width: 992px) {
     .row-nav{max-width:960px;}
     input[type='submit']{width:auto; padding: .7rem 1.3rem;}
+    ul.sub-menu{position: absolute;}
 
 }
 @media (min-width: 1200px) {

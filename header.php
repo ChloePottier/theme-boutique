@@ -18,6 +18,11 @@
     <?php wp_body_open();
     if(is_front_page()): ?>
         <header  id='masthead' class='position-relative'>
+        <div id='logoprint'>
+        <?php if (function_exists('the_custom_logo')){
+                the_custom_logo();
+        }?>
+        </div>
             <div class='container-fluid position-fixed zindex-3 bg-white' id='navbar'>
                 <div class='container'>
                 <?php get_template_part('template-parts/navigation/navigation','top'); ?>

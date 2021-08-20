@@ -1,6 +1,5 @@
 <?php require 'hooks.php';
-function wp_styles_scripts()
-{
+function wp_styles_scripts(){
     wp_enqueue_style('bootstrap', get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.css');
     wp_enqueue_script('jquery');
     wp_enqueue_script('bootstrap-js', get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.js', array('jquery', 'popper'), 1, true);
@@ -9,8 +8,7 @@ function wp_styles_scripts()
     wp_enqueue_style('woocommerce', get_template_directory_uri() .'/assets/wc-style.css');
     wp_enqueue_style('style', get_stylesheet_uri());
 }
-function akaleyashop_setup()
-{
+function akaleyashop_setup(){
     add_theme_support('custom-logo', array(
     'height'      => 80,
     'width'       => 80,
@@ -48,8 +46,7 @@ function wpm_myme_types($mime_types)
     return $mime_types;
 }
 //Menus
-function register_nav()
-{
+function register_nav(){
     register_nav_menus(
         array(
         'header-menu' => __('Header Menu'),
