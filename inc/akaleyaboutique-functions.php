@@ -31,7 +31,9 @@ function akaleya_size_guide(){?>
 <?php }
 function size_guide_content(){?>
     <div id='contentSizeGuide' class='mt-3 content-size-guide display-none row pt-2 pb-3 box-shadow'>
-        <h2 class='col-12 col-sm-10 fw-bold text-uppercase order-2 order-sm-1'><?php echo  get_post_field('post_title', 297);?> </h2>
+        <h2 class='col-12 col-sm-10 fw-bold text-uppercase order-2 order-sm-1'><?php echo  get_post_field('post_title', 297);
+         //echo  get_post_field('post_title', 316); //en ligne
+        ?> </h2>
         <div id='closeGuide' class='col-12 col-sm-2 text-end order-1 order-sm-2 py-3 py-sm-0'>
             <div class='d-flex flex-column align-items-center'>
             <label class='fs-7'>FERMER</label>
@@ -45,7 +47,9 @@ function size_guide_content(){?>
             </div>
         </div>            
         <div class='col-12 order-3'>
-            <?php echo get_post_field('post_content', 297);?>
+            <?php echo get_post_field('post_content', 297);
+            //  echo get_post_field('post_content', 316); //en ligne
+            ?>
         </div>
     </div>
 <?php }
