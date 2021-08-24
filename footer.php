@@ -24,9 +24,12 @@
             </div>
         </div>
     </footer>
-    <script src='<?php echo get_template_directory_uri(); ?>/assets/js/navigation/burger.js' async defer></script>
-    <script src='<?php echo get_template_directory_uri(); ?>/assets/js/navigation/sub-menu.js' async defer></script>
-    <?php wp_footer(); ?>
+    <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/assets/js/navigation/burger.js' async defer></script>
+    <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/assets/js/navigation/sub-menu.js' async defer></script>
+    <?php if(is_product()):?>
+        <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/assets/js/pop-up.js' async defer></script>
+    <?php endif;
+     wp_footer(); ?>
 
 </body>
 </html>

@@ -86,16 +86,16 @@ function cpt_faq_init()
 }
 //Logo page connexion BO
 function my_login_logo() { ?>
-<style type="text/css">
-    #login h1 a,
-    .login h1 a {
-        background-image: url(<?php echo get_template_directory_uri();
-        ?>%pcs-comment-end#* //images/logo.jpg);
-        background-repeat: no-repeat;
-        padding-bottom: 30px;
-    }
-</style>
-<?php }
+    <style type="text/css">
+        #login h1 a,.login h1 a {
+            background-image: url(<?php echo get_template_directory_uri();?>/images/Logo-ENTO.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 120px;
+            width: 120px;
+        }
+    </style>
+    <?php }  
 
 function my_login_logo_url()
 {
@@ -105,6 +105,7 @@ function my_login_logo_url_title()
 {
     return get_bloginfo('description');
 }
+
 
 require 'inc/akaleyaboutique-functions.php';
 require 'inc/akaleyaboutique-hooks.php';

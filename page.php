@@ -1,10 +1,8 @@
 <?php
-/**
- * The main template file.
- *
- * @package akaleyaboutique
- */
-
+/*
+Template Name: Modèle de page par défault(sans fil d'Ariane)
+Template Post Type: post, page, product
+*/
 get_header(); ?>
     <?php if (have_posts()) :
             while (have_posts()) : the_post(); ?>

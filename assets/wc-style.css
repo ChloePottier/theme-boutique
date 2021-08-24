@@ -33,10 +33,10 @@ address{margin-bottom: 1rem; font-style: normal; line-height: inherit; backgroun
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt,  .woocommerce input.button.alt,.woocommerce div.product form.cart .button:hover,
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, 
-.woocommerce button.button,.woocommerce button.button.alt, .woocommerce input.button.alt{background: #fff;border: #ccc solid 1px;}
+.woocommerce button.button,.woocommerce button.button.alt, .woocommerce input.button.alt,.button-size-guide{background: #fff;border: #ccc solid 1px;}
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover,
 .woocommerce input.button.alt:hover, .woocommerce button.button.alt:hover,
- .woocommerce button.button:hover,.woocommerce a.button:hover{color:#000!important; background-color: #fff!important;}
+ .woocommerce button.button:hover,.woocommerce a.button:hover,.button-size-guide:hover{color:#000!important; background-color: #fff!important;}
 .woocommerce #respond input#submit, .woocommerce a.button, 
 .woocommerce button.button, .woocommerce input.button{border-radius: 0;}
 .cart{padding-top: 1.5rem;}
@@ -52,6 +52,8 @@ form table label{margin-bottom: 0;}
 .woocommerce .quantity .qty{border: #ccc solid 1px;}
 .woocommerce-tabs .related h2{height:55px;}
 .woocommerce div.product .woocommerce-tabs{margin: 0 0 5rem;}
+#sizeguide{cursor: pointer;}
+#contentSizeGuide{position: absolute; background: #fff;width: 100vw; height: 100vh; z-index: 1000;}
 
 /* Grid */
 /* @media (min-width: 576px) {
