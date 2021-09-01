@@ -1,13 +1,13 @@
 /*!
 Theme Name:   Akaleya : Boutique 
 Author:       Akaleya, Web & Print
-Description:   Theme for web site or e-commerce. Can be used with Woocommerce
+Description:  Ce thème peut-être utilisé pour un site ou une boutique Woocommerce. Il est nécessaire de disposer du plugin ACF pour le guide des tailles avec un champ 'guide_content'.
 Version:     1.0
 Text Domain:  akaleyaboutique
-Tags:         website,e-commerce, eco-conception
+Tags:         website, e-commerce, eco-conception, wordpress, woocommerce, FAQ, size guide
 */
 body{font-family: Helvetica, Arial, sans-serif;}
-#logoprint,.grecaptcha-badge{display: none;}
+#logoprint,.grecaptcha-badge{display: none!important;}
 a,#nav-faq div a{text-decoration: none; color:#727272!important;}
 a:hover{color: #000!important;}
 li{list-style: none;}

@@ -39,8 +39,7 @@ function akaleyashop_setup(){
     )
     );
 }
-function wpm_myme_types($mime_types)
-{
+function wpm_myme_types($mime_types){
     $mime_types['svg'] = 'image/svg+xml'; //On autorise les .svg
     $mime_types['webp'] = 'image/webp'; //On autorise les .webp
     return $mime_types;
@@ -55,8 +54,7 @@ function register_nav(){
        )
     );
 }
-function cpt_faq_init()
-{
+function cpt_faq_init(){
     $labels = array(
         'name'                  => _x('FAQ', 'Post type general name', 'textdomain'),
         'singular_name'         => _x('FAQ', 'Post type singular name', 'textdomain'),

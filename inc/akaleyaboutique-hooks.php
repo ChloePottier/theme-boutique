@@ -18,9 +18,6 @@ remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wr
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 // ajouter les conteneurs du thème
 add_action('akaleya_before_main_content', 'akaleya_wrapper_start', 10);
-
-add_action('akaleya_before_main_content', 'size_guide_content', 10);
-
 add_action('akaleya_after_main_content', 'akaleya_wrapper_end', 10);
 add_action( 'after_setup_theme', 'akaleya_add_woocommerce_support');
 // fil d'arianne
@@ -32,11 +29,19 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 ); //display category name
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 20 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10 );
+// Guide des tailles
+add_action('woocommerce_single_product_summary','akaleya_size_guide',25); //bouton  
+add_action('akaleya_before_main_content', 'size_guide_content', 10); //contenu
 //suppression tri des produits
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 //suppression nombre de résultat
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+// repositionner Détails produits
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+add_action( 'woocommerce_after_single_product_summary', 'akaleya_short_description_tab',5);
+add_action( 'woocommerce_after_single_product_summary', 'akaleya_clear', 30);
 
-add_action('woocommerce_single_product_summary','akaleya_size_guide',25);
+
+
 
 

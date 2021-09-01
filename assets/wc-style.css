@@ -29,12 +29,14 @@ address{margin-bottom: 1rem; font-style: normal; line-height: inherit; backgroun
 .woocommerce div.product p.price, .woocommerce div.product span.price,.woocommerce ul.products li.product .price{color: #000!important; font-weight: 600;font-size: 1.5rem;}
 .woocommerce-loop-category__title mark{display: none;}
 .product-category h2,.woocommerce-loop-product__title,.button-size-guide{text-align: center; font-weight: 600;}
+.woocommerce-product-details__short-description h3{font-weight: 600; text-transform: uppercase;}
 .woocommerce div.product form.cart .button,
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt,  .woocommerce input.button.alt,.woocommerce div.product form.cart .button:hover,
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, 
 .woocommerce button.button,.woocommerce button.button.alt, .woocommerce input.button.alt{background: #fff;border: #ccc solid 1px;}
-
+.woocommerce-product-details__short-description{float: left;width: 48%;}
+/* .woocommerce #content div.product .woocommerce-tabs, .woocommerce div.product .woocommerce-tabs, .woocommerce-page #content div.product .woocommerce-tabs, .woocommerce-page div.product .woocommerce-tabs{clear: none;} */
 .button-size-guide{
     background: #fff;
 text-transform: uppercase;
@@ -62,8 +64,17 @@ form table label{margin-bottom: 0;}
 .woocommerce-tabs .related h2{height:55px;}
 .woocommerce div.product .woocommerce-tabs{margin: 0 0 5rem;}
 #sizeguide,#closeGuide,.cursor-pointer{cursor: pointer;}
-/* #contentSizeGuide{position: fixed; background: #fff;  z-index: 20; top:5rem;} */
-#contentSizeGuide{position: absolute; background: #fff;z-index: 20; top:5rem; width: 100%;}
+#contentSizeGuide{
+    position: fixed; 
+    width: 80%;
+    background: #fff;  
+    z-index: 20; 
+    top:4rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5% auto;
+}
+/* #contentSizeGuide{position: absolute; background: #fff;z-index: 20; top:5rem; width: 100%;} */
 /* Grid */
 /* @media (min-width: 576px) { 
 

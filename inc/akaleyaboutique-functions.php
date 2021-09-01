@@ -23,11 +23,9 @@ function akaleya_wc_breadcrumbs() {
             'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
         );
 }
-
 // Guide des tailles
 function akaleya_size_guide(){?>
     <div  class='size-guide button-size-guide' id='sizeguide'>Guide des tailles</div> 
-   
 <?php }
 function size_guide_content(){?>
     <div id='contentSizeGuide' class='mt-3 content-size-guide display-none row pt-2 pb-3 box-shadow'>
@@ -51,3 +49,17 @@ function size_guide_content(){?>
         </div>
     </div>
 <?php }
+
+function akaleya_short_description_tab() {
+    wc_get_template( 'single-product/tabs/tabs.php' );
+}
+
+if ( ! function_exists( 'akaleya_clear' ) ) {
+
+	/**
+	 * Output the product tabs.
+	 */
+	function akaleya_clear() {
+		wc_get_template( 'single-product/clear.php' );
+	}
+}
