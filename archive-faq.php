@@ -17,6 +17,8 @@ get_header(); ?>
                     </a>
                 </li>
     <?php endwhile;
+        else :
+            echo '<p>Désolé, cette page n\'est pas disponible pour le moment.</p>';
         endif; ?>
         </ul>    
 </div>

@@ -7,7 +7,7 @@ Text Domain:  akaleyaboutique
 Tags:         website,e-commerce, eco-conception
 */
 body{font-family: Helvetica, Arial, sans-serif;}
-#logoprint{display: none;}
+#logoprint,.grecaptcha-badge{display: none;}
 a,#nav-faq div a{text-decoration: none; color:#727272!important;}
 a:hover{color: #000!important;}
 li{list-style: none;}
@@ -26,6 +26,8 @@ li{list-style: none;}
 .bg-grey-dark{background:#2e2e2e;}
 .nav-footer a:hover{color: #727272 !important;}
 .akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover{color: #c9c9c9 !important;}
+.sub-menu .menu-item a{color:#2e2e2e!important;}
+.sub-menu .menu-item a:hover, .sub-menu .current-menu-item a,.current_page_ancestor a{color: #c9c9c9 !important;}
 #navigation a{color: #fff!important;}
 .vh-30{height:30vh!important;}
 form, input[type='submit'],input[type='text'],input[type='email'], textarea, form p label{width: 100%;}
@@ -38,7 +40,7 @@ form label{font-weight: 600; margin-bottom: 1rem;}
 #navbar{top: 0;}
 .row-nav{width: 100%;}
 ul.sub-menu li{position: relative;}
-#menu-top-md #menu-header,#menu-shop{display: flex;}
+#menu-top-md nav ul,#menu-shop{display: flex;}
 #menu-reseaux-sociaux li{padding-right: 1rem;}
 #menu-reseaux-sociaux li:last-child{padding-right: 0;}
 .menu a,.menu-down a{padding-right: 1.5rem;}
@@ -150,7 +152,9 @@ overflow-wrap: break-word;}
 @media (min-width: 992px) {
     .row-nav{max-width:960px;}
     input[type='submit']{width:auto; padding: .7rem 1.3rem;}
-    ul.sub-menu{position: absolute;}
+    ul.sub-menu{position: absolute; background: #fff; padding:2rem 2rem 1rem;}
+    ul.sub-menu li{border-bottom: solid 1px #ccc; padding: .5rem 0;}
+    ul.sub-menu li:last-child{border-bottom: none; padding: .5rem 0 0 0;}
 
 }
 @media (min-width: 1200px) {
