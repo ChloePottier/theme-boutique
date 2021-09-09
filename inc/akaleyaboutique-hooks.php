@@ -26,9 +26,11 @@ add_action( 'akaleya_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 //modifier positionnement du prix
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );//prix
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );//contenu
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 ); //display category name
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 20 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 ); //display category name, tag , UGS
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 20 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 30);
+
 // Guide des tailles
 add_action('woocommerce_single_product_summary','akaleya_size_guide',25); //bouton  
 add_action('akaleya_before_main_content', 'size_guide_content', 10); //contenu

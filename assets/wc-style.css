@@ -35,7 +35,7 @@ address{margin-bottom: 1rem; font-style: normal; line-height: inherit; backgroun
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, 
 .woocommerce button.button,.woocommerce button.button.alt, .woocommerce input.button.alt{background: #fff;border: #ccc solid 1px;}
-.woocommerce-product-details__short-description{float: left;width: 48%;}
+.woocommerce-product-details__short-description{float: left;}
 /* .woocommerce #content div.product .woocommerce-tabs, .woocommerce div.product .woocommerce-tabs, .woocommerce-page #content div.product .woocommerce-tabs, .woocommerce-page div.product .woocommerce-tabs{clear: none;} */
 .button-size-guide{
     background: #fff;
@@ -87,7 +87,7 @@ form table label{margin-bottom: 0;}
     .woocommerce-MyAccount-navigation ul{width: 80%;}
     .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals{width: 48%;}
     .woocommerce ul.products li.product .button{width: auto;}
-    /* #contentSizeGuide{width: 80%; } */
+    .woocommerce-product-details__short-description{float: left;width: 48%;}
 }
 
  @media (min-width: 1200px) {
