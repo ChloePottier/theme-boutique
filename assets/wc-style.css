@@ -74,6 +74,7 @@ form table label{margin-bottom: 0;}
     transform: translateX(-50%);
     margin: 5% auto;
 }
+.woocommerce div.product div.images .flex-control-thumbs li{margin:5px 0 0 0;}
 /* #contentSizeGuide{position: absolute; background: #fff;z-index: 20; top:5rem; width: 100%;} */
 /* Grid */
 /* @media (min-width: 576px) { 

@@ -49,16 +49,12 @@ function size_guide_content(){?>
         </div>
     </div>
 <?php }
-
+//fonction repositionne détail du produit
 function akaleya_short_description_tab() {
     wc_get_template( 'single-product/tabs/tabs.php' );
 }
-
 if ( ! function_exists( 'akaleya_clear' ) ) {
-
-	/**
-	 * Output the product tabs.
-	 */
+    // ajouter div class="clear"
 	function akaleya_clear() {
 		wc_get_template( 'single-product/clear.php' );
 	}

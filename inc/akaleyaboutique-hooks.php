@@ -29,7 +29,7 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 ); //display category name, tag , UGS
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 20 );
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 30);
+// add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 30);
 
 // Guide des tailles
 add_action('woocommerce_single_product_summary','akaleya_size_guide',25); //bouton  

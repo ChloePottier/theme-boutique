@@ -1,4 +1,7 @@
+
 <?php require 'hooks.php';
+require 'inc/akaleyaboutique-functions.php';
+require 'inc/akaleyaboutique-hooks.php';
 function wp_styles_scripts(){
     wp_enqueue_style('bootstrap', get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.css');
     wp_enqueue_script('jquery');
@@ -105,5 +108,4 @@ function my_login_logo_url_title()
 }
 
 
-require 'inc/akaleyaboutique-functions.php';
-require 'inc/akaleyaboutique-hooks.php';
+
