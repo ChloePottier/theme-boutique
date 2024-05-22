@@ -1,0 +1,87 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "name": "Noir",
+                    "slug": "noir",
+                    "color": "#000"
+                },
+                {
+                    "name": "Gris Foncé",
+                    "slug": "dark-grey",
+                    "color": "#444"
+                },
+                {
+                    "name": "Gris Clair",
+                    "slug": "light-grey",
+                    "color": "#c6c6c6"
+                },
+                {
+                    "name": "Gris Léger",
+                    "slug": "extra-light-grey",
+                    "color": "#E6E7E9"
+                },
+                {
+                    "name": "Blanc",
+                    "slug": "blanc",
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        "typography": {
+            "fluid": true,
+            "fontFamilies": [
+                {
+                    "fontFace": [
+                        {
+                            "fontFamily": "Poppins Regular",
+                            "fontStretch": "regular",
+                            "fontStyle": "normal",
+                            "src": [
+                                "file:./assets/fonts/Poppins-Regular.woff2"
+                            ]
+                        }
+                    ],
+                    "fontFamily": "\"Poppins Regular\", sans-serif",
+                    "name": "Poppins Regular",
+                    "slug": "heading"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "fluid": false,
+                    "name": "Très petit",
+                    "size": "0.8rem",
+                    "slug": "x-small"
+                },
+                {
+                    "fluid": false,
+                    "name": "Petit",
+                    "size": "0.9rem",
+                    "slug": "small"
+                },
+                {
+                    "fluid": false,
+                    "name": "Normal",
+                    "size": "1rem",
+                    "slug": "medium"
+                },
+                {
+                    "fluid": false,
+                    "name": "Grand",
+                    "size": "1.2rem",
+                    "slug": "large"
+                },
+                {
+                    "fluid": false,
+                    "name": "Très grand",
+                    "size": "1.4rem",
+                    "slug": "x-large"
+                }
+            ]
+        }
+    }
+}
