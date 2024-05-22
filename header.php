@@ -1,58 +1,48 @@
-<?php
-/**
- * The header for our theme.
+<?php /** The header for our theme.
  * @package akaleyaboutique
- */
-?>
+ */?>
 <!DOCTYPE html>
-<html  <?php language_attributes(); ?>>
+<html  <?php language_attributes();?>>
 <head>
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <?php //get_template_part('google.php');?>
-    <?php wp_head(); ?>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
+    <meta name='theme-color' media='(prefers-color-scheme: light)' content='white'>
+    <?php get_template_part('google.php');
+    wp_head(); ?>
 </head>
 <body id='top' <?php body_class(); ?>>
-    <?php wp_body_open(); ?>
-    <header  id='masthead' class='position-relative site-header'>
-    <div class='container position-absolute'>
-            <div class='row'>
-                <div class='col-4'>
-                    <?php if (function_exists('the_custom_logo')){
-                            the_custom_logo();
-                            // rendre le logo responsive
-                    }?>
+    <?php wp_body_open();
+    if(is_front_page()): ?>
+        <header  id='masthead' class='position-relative'>
+        <div id='logoprint'>
+        <?php if (function_exists('the_custom_logo')){
+                the_custom_logo();
+        }?>
+        </div>
+            <div class='container-fluid position-fixed zindex-3 bg-white' id='navbar'>
+                <div class='container'>
+                <?php get_template_part('template-parts/navigation/navigation','top'); ?>
                 </div>
-                <div class='col-4 d-none d-md-flex ' id='menu-top-md'itemscope itemtype='https://schema.org/BreadcrumbList'>
-                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-                </div>
-                <div class='col-4' >
-                    <?php wp_nav_menu( array( 'theme_location' => 'shop-menu') ); ?>
-                </div>
-                <div class='col d-flex justify-content-end d-md-none'>
-                    <!-- menu burger  -->
-                    <label class='burger text-center d-flex flex-column d-md-none text-white position-fixed rounded-circle ' id='burger'>MENU
-                        <span class='bg-white isclosed mx-auto' id='burger1'>&nbsp;</span>
-                        <span class='bg-white isclosed mx-auto' id='burger2'>&nbsp;</span>
-                        <span class='bg-white isclosed mx-auto' id='burger3'>&nbsp;</span>
-                    </label>
-                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_id' => 'navigation', 'menu_class' => 'display-none' ) ); ?>
-
-
-                </div>
-
             </div>
-        </div>
-        <div class='custom-header'>
-        <?php if ( get_header_image() ) : ?>
-            <img src="<?php header_image(); ?>" width='1900' height='1200' alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-            <?php endif; ?>
-        </div>
-       
-
-    </header>
+            <div class='custom-header z-index1'>
+                    <!-- <div class='custom-header-media'> -->
+                            <?php the_custom_header_markup(); ?>
+                    <!-- </div>   -->
+            </div>
+        </header>
+    <?php else : ?>
+        <header  id='masthead' class='position-relative mb-5'>
+            <div class='container-fluid position-fixed zindex-3 bg-white' id='navbar'>
+                <div class='container'>
+                    <?php get_template_part('template-parts/navigation/navigation','top'); ?>
+                </div>
+            </div>
+        </header>        
+    <?php endif;
+    
     
 
-  
+
+
 

@@ -1,2 +1,6 @@
+.git
+.gitignore
+images/
 google.php
-bootstrap/
+assets/bootstrap/
+assets/font-awesome/
