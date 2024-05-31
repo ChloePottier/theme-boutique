@@ -1,6 +1,6 @@
 {
     "$schema": "https://schemas.wp.org/trunk/theme.json",
-    "version": 2,
+    "version": 3,
     "settings": {
         "color": {
             "palette": [
@@ -12,12 +12,17 @@
                 {
                     "name": "Gris Foncé",
                     "slug": "dark-grey",
-                    "color": "#444"
+                    "color": "#2e2e2e"
+                },
+                {
+                    "name": "Gris",
+                    "slug": "grey",
+                    "color": "#727272"
                 },
                 {
                     "name": "Gris Clair",
                     "slug": "light-grey",
-                    "color": "#c6c6c6"
+                    "color": "#c9c9c9"
                 },
                 {
                     "name": "Gris Léger",
@@ -30,6 +35,10 @@
                     "color": "#ffffff"
                 }
             ]
+        },
+        "layout": {
+            "contentSize": "992px",
+            "wideSize": "1280px"
         },
         "typography": {
             "fluid": true,

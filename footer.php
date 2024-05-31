@@ -6,7 +6,7 @@
             <div class='row'>
                 <div class='col-12 col-md-6 text-center text-md-start nav-footer' >
                     <h3 class='fw-bold text-uppercase fs-5'>Service client</h3>
-                    <?php wp_nav_menu( array( 'theme_location' => 'subfooter-menu','menu_class' => 'menu-subfooter p-0 fs-6','container' => 'nav' ) ); ?>
+                    <?php wp_nav_menu( array( 'menu'  => 'Service client', 'theme_location' => 'subfooter-menu','menu_class' => 'menu-subfooter p-0 fs-6','container' => 'nav' ) ); ?>
                 </div>
                 <div class='col-12 col-md-6 text-center text-md-end'></div>
             </div>
@@ -16,7 +16,7 @@
         <div class='container'>
             <div class='row flex-md-row-reverse'>
                 <div class='col-12 col-md-6 fs-2 nav-footer'>
-                    <?php wp_nav_menu( array( 'theme_location' => 'footer-menu','menu_class' => 'menu-footer p-0 d-flex flex-row justify-content-center justify-content-md-end','container' => 'nav' ) ); ?>
+                    <?php wp_nav_menu( array( 'menu'  => 'Réseaux sociaux','theme_location' => 'footer-menu','menu_class' => 'menu-footer p-0 d-flex flex-row justify-content-center justify-content-md-end','container' => 'nav' ) ); ?>
                 </div>
                 <div class='col-12 col-md-6 text-center text-md-start' id='copyrightinfo' >
                     <p class='mb-0'><a href='<?php echo get_home_url(); ?>'class='fw-bold text-black'><?php bloginfo('name'); ?></a> - Copyright © 2021</p>
@@ -28,6 +28,6 @@
     </footer>
     <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/assets/js/navigation/burger.js' async defer></script>
     <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/assets/js/navigation/sub-menu.js' async defer></script>
-     wp_footer();?>
+    <?php wp_footer();?>
 </body>
 </html>

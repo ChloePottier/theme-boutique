@@ -9,30 +9,39 @@ Tags:         website, e-commerce, eco-conception, wordpress, woocommerce, FAQ, 
 /* FONT */
 body{font-family: Helvetica, Arial, sans-serif;}
 h1,h2,h3,h4,h5,h6,#menu-header a,#navigation a{font-family: 'Poppins Regular', Helvetica, Arial, sans-serif !important;}
-.fw-600,form label{font-weight: 600;}
 .fw-800{font-weight: 800;}
+.fw-600,form label{font-weight: 600;}
+#menu-reseaux-sociaux li,#not-found{font-size: 2rem;}
+#navigation a{font-size: 1.5rem;}
+h1.h1-blog-info-name{font-size:1.3rem;}
+h2.h2-blog-info-description{font-size:1rem;}
 .fs-7{font-size: .8rem;}
+.white-space-nowraph1.h1-blog-info-name,h2.h2-blog-info-description{white-space: nowrap;}
+a:not(main p a){text-decoration: none!important;}
 
-a,#nav-faq div a{text-decoration: none!important; color:#727272!important;}
-a:hover{color: #000!important;}
-nav li,#menu-shop li{list-style: none;}
-.bg-cover{background-size: cover !important;}
-.text-shadow{text-shadow: #000 2px 2px 5px;}
-.box-shadow{box-shadow: .4rem .4rem 1rem #ccc}
-
-.zindex-1{z-index: 1;}
-.zindex-2{z-index: 20;}
-.zindex-3{z-index: 30;}
 /* Colors */
-.text-black,.akaleya a:hover,.nav-footer a,#nav-faq div a:hover,[type='submit']:hover,.button:hover{color: #000 !important;}
-.text-grey-dark,.menu a, #burger span{color:#2e2e2e!important;}
-.bg-grey-dark{background:#2e2e2e;}
-.akaleya a,.nav-footer a:hover{color: #727272 !important;}
-.menu .current-menu-item a,.menu a:hover,#navigation a:hover{color: #c9c9c9 !important;}
-.sub-menu .menu-item a{color:#2e2e2e!important;}
+:root {
+    --black: #000;
+    --dark-grey: #2e2e2e;
+    --grey:#727272;
+    --light-grey: #c9c9c9;
+    --extra-light-grey: #E6E7E9;
+    --white: #fff;
+}
+main p a,#nav-faq div a{color: var(--grey)}
+main p a:hover,.text-black,.akaleya a:hover,.nav-footer a,#nav-faq div a:hover,[type='submit']:hover,.button:hover{color: #000 !important;}
+.text-grey-dark,.menu a,a#bloginfo, #burger span{color: var(--dark-grey)!important;}
+.bg-grey-dark{background:var(--dark-grey)!important;}
+.akaleya a,.nav-footer a:hover,
+.menu .current-menu-item a,.menu a:hover,#navigation a:hover,footer a.text-black:hover{color: var(--grey) !important;}
+.sub-menu .menu-item a{color:var(--dark-grey)!important;}
 .sub-menu .menu-item a:hover, .sub-menu .current-menu-item a,.current_page_ancestor a{color: #c9c9c9 !important;}
 #navigation a{color: #fff!important;}
 
+.text-shadow{text-shadow: #000 2px 2px 5px;}
+.box-shadow{box-shadow: .4rem .4rem 1rem #ccc}
+nav li,#menu-shop li{list-style: none;}
+.bg-cover{background-size: cover !important;}
 
 /* Colors btn black */
 /* .text-black,.akaleya a:hover,.nav-footer a,#nav-faq div a:hover{color: #000 !important;}
@@ -42,6 +51,9 @@ nav li,#menu-shop li{list-style: none;}
 [type='submit']:hover,.button:hover{background: #727272;}
 .akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover,.menu-down a:hover{color: #c9c9c9 !important;}
 .menu a,#navigation a,[type='submit'],button{color: #fff!important;} */
+.zindex-1{z-index: 1;}
+.zindex-2{z-index: 20;}
+.zindex-3{z-index: 30;}
 
 .vh-30{height:30vh!important;}
 form, input[type='submit'],input[type='text'],input[type='email'], textarea, form p label{width: 100%;}
@@ -52,21 +64,27 @@ textarea{height:8rem;}
 form label{margin-bottom: 1rem;}
 
 /* DISPLAY */
-#logoprint,.grecaptcha-badge{display: none!important;}
+.display-none,#logoprint,.grecaptcha-badge, #bloginfo{display:none!important;}
+.display-flex{display: flex; flex-direction: column;}
+.display-flex2,#menu-top-md nav ul,#menu-shop, nav.menu-header-container{display: flex;}
 .display-inline-block,a.custom-logo-link,.wp-block-button__link{display: inline-block!important;}
-/* header */
-#navbar{top: 0;}
-.row-nav{width: 100%;}
-ul.sub-menu li{position: relative;}
-#menu-top-md nav ul,#menu-shop{display: flex;}
-#menu-reseaux-sociaux li{padding-right: 1rem;}
+ul#menu-shop,#menu-top-md ul#menu-header{align-items: center;}
+
+
+/* PaDDING, MARGIN */
 #menu-reseaux-sociaux li:last-child{padding-right: 0;}
+#menu-reseaux-sociaux li{padding-right: 1rem;}
 .menu a,.menu-down a{padding-right: 1.5rem;}
 #navigation li,#menu-service-client li{padding-bottom:1rem;}
-#menu-reseaux-sociaux li,#not-found{font-size: 2rem;}
-#navigation a{font-size: 1.5rem;}
-.custom-header{position: relative; width: 100%;}
-#wp-custom-header{margin-top: 45px; max-height: 95vh; overflow: hidden;}
+.col-custom-logo{padding:.5rem 0; }
+ul#menu-shop,ul#menu-header{margin-bottom: 0!important;}
+
+/* header */
+#navbar{top: 0;}
+.width-100,.row-nav,.custom-header{width: 100%;}
+ul.sub-menu li,.custom-header{position: relative;}
+.overflow-hidden,#wp-custom-header{overflow: hidden;}
+#wp-custom-header{margin-top: 45px; max-height: 95vh;}
 .custom-header img, .custom-header video,.custom-header iframe{
     position: relative;
 	height: auto;
@@ -95,9 +113,7 @@ ul.sub-menu li{position: relative;}
     padding-top: .8rem;
     font-size: .8rem;
 }
-.display-none{display:none; visibility: hidden;}
-.display-flex{display: flex; flex-direction: column;}
-.display-flex2{display: flex;}
+
 .burger span:last-child {margin-bottom:0px;}
 .isclosed{transform: none; 
     width: 35px;
@@ -118,22 +134,24 @@ footer #copyrightinfo{font-size: .8rem!important;}
 .item-faq{border-bottom: 1px solid #dee2e6;}
 .item-faq:last-child{border-bottom: none;}
 .wp-block-button__link{
-background-color: transparent;
-border: #fff solid 1px;
-border-radius: 0em;
-box-shadow: none;
-cursor: pointer;
-font-size: 1.125em;
-padding: .667em 1.333em;
-text-align: center;
-text-decoration: none;
-overflow-wrap: break-word;}
+    background-color: transparent;
+    border: #fff solid 1px;
+    border-radius: 0em;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 1.125em;
+    padding: .667em 1.333em;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: break-word;
+}
 .wp-block-cover__inner-container a{color: #fff!important;}
 .wp-block-cover__inner-container a:hover{color: #000!important;}
 /* Grid */
 @media (min-width: 576px) {
     .row-nav{max-width:540px;}
     #navigation{ padding: 7rem 0 0 15rem; }
+    #bloginfo{display: block!important;}
 }
 @media (min-width: 768px) {
     .row-nav{max-width:720px;}

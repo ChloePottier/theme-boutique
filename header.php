@@ -27,7 +27,7 @@
             </div>
             <div class='custom-header z-index1'>
                     <!-- <div class='custom-header-media'> -->
-                            <?php the_custom_header_markup(); ?>
+                        <?php the_custom_header_markup(); ?>
                     <!-- </div>   -->
             </div>
         </header>
