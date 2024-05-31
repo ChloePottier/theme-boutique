@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $product_tabs = apply_filters( 'woocommerce_product_tabs', array() );
 
 if ( ! empty( $product_tabs ) ) : ?>
-
+	<!-- Changement -->
 	<div class='wrapper-short-description'>
 	<?php global $post;
 	$short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
@@ -41,4 +41,5 @@ if ( ! empty( $product_tabs ) ) : ?>
 			echo $short_description; ?>
 		</div>
 	</div>
+	<!--  -->
 <?php endif;

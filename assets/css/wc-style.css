@@ -1,4 +1,5 @@
-.woocommerce,p,a,span{font-family: Helvetica, Arial, sans-serif;}
+/* .woocommerce,p,a,span{font-family: Helvetica, Arial, sans-serif;} */
+.woocommerce,p,span{font-family: Helvetica, Arial, sans-serif;}
 .woocommerce-loop-product__title{font-size: 1.3rem;}
 .woocommerce-privacy-policy-text,.woocommerce-LostPassword,.woocommerce ul.products li.product .button,#menu-shop .count{font-size: .8rem;}
 .woocommerce .woocommerce-breadcrumb{padding: 1rem 0;}

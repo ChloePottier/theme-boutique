@@ -19,7 +19,7 @@ li{list-style: none;}
 .zindex-1{z-index: 1;}
 .zindex-2{z-index: 20;}
 .zindex-3{z-index: 30;}
-/* Colors */
+/* Colors btn black */
 .text-black,.akaleya a:hover,.nav-footer a,#nav-faq div a:hover{color: #000 !important;}
 .text-grey-dark,.menu-down a{color:#2e2e2e!important;}
 .bg-grey-dark{background:#2e2e2e;}
@@ -27,6 +27,7 @@ li{list-style: none;}
 [type='submit']:hover,.button:hover{background: #727272;}
 .akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover,.menu-down a:hover{color: #c9c9c9 !important;}
 .menu a,#navigation a,[type='submit'],button{color: #fff!important;}
+
 .vh-30{height:30vh!important;}
 form, input[type='submit'],input[type='text'],input[type='email'], textarea, form p label{width: 100%;}
 input, textarea{border:none;border-bottom: 2px solid #000; margin-bottom: 1rem;}

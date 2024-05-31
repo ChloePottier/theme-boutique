@@ -36,6 +36,7 @@ function akaleyashop_setup(){
             'description'   => __('Default Header Image', 'akaleyashop'),
         ),
     ));
+    add_theme_support( 'woocommerce' ); // usage basic. Possibilité d'améliorer
 }
 function wpm_myme_types($mime_types){
     $mime_types['svg'] = 'image/svg+xml';

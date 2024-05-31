@@ -3,8 +3,11 @@
         <?php if (function_exists('the_custom_logo')){
                 the_custom_logo();
         }?>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+       <h1><?php bloginfo('name'); ?></h1>
+    </a>
     </div>
-    <div class='col-lg-8 d-none d-lg-flex fw-bold pt-4 fs-5' id='menu-top-md' itemscope itemtype='https://schema.org/BreadcrumbList'>
+    <div class='col-lg-8 d-none d-lg-flex fw-bold pt-4' id='menu-top-md' itemscope itemtype='https://schema.org/BreadcrumbList'>
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => 'nav' ) ); ?>
     </div>
     <div class='col-6 col-md-5 col-lg-2 fs-3 d-flex flex-row justify-content-end' >

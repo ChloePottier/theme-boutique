@@ -28,6 +28,7 @@ if ( ! $short_description ) {
 }
 
 ?>
+<!-- Changement -->
 <div class='clear'></div>
 <div class='woocommerce-product-details__the-content'>
 	<?php the_content(); ?>

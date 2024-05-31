@@ -2,20 +2,24 @@
 Theme Name:   Akaleya : Boutique 
 Author:       Akaleya, Web & Print
 Description:  Ce thème peut-être utilisé pour un site ou une boutique WooCommerce. Il est nécessaire de disposer du plugin ACF pour le guide des tailles avec un champ 'guide_content'.
-Version:     1.2
+Version:     2.0
 Text Domain:  akaleyaboutique
 Tags:         website, e-commerce, eco-conception, wordpress, woocommerce, FAQ, size guide
 */
+/* FONT */
 body{font-family: Helvetica, Arial, sans-serif;}
-#logoprint,.grecaptcha-badge{display: none!important;}
+h1,h2,h3,h4,h5,h6,#menu-header a,#navigation a{font-family: 'Poppins Regular', Helvetica, Arial, sans-serif !important;}
+.fw-600,form label{font-weight: 600;}
+.fw-800{font-weight: 800;}
+.fs-7{font-size: .8rem;}
+
 a,#nav-faq div a{text-decoration: none!important; color:#727272!important;}
 a:hover{color: #000!important;}
 nav li,#menu-shop li{list-style: none;}
 .bg-cover{background-size: cover !important;}
 .text-shadow{text-shadow: #000 2px 2px 5px;}
 .box-shadow{box-shadow: .4rem .4rem 1rem #ccc}
-.fw-600{font-weight: 600;}
-.fs-7{font-size: .8rem;}
+
 .zindex-1{z-index: 1;}
 .zindex-2{z-index: 20;}
 .zindex-3{z-index: 30;}
@@ -28,14 +32,27 @@ nav li,#menu-shop li{list-style: none;}
 .sub-menu .menu-item a{color:#2e2e2e!important;}
 .sub-menu .menu-item a:hover, .sub-menu .current-menu-item a,.current_page_ancestor a{color: #c9c9c9 !important;}
 #navigation a{color: #fff!important;}
+
+
+/* Colors btn black */
+/* .text-black,.akaleya a:hover,.nav-footer a,#nav-faq div a:hover{color: #000 !important;}
+.text-grey-dark,.menu-down a{color:#2e2e2e!important;}
+.bg-grey-dark{background:#2e2e2e;}
+.menu-down .current-menu-item a,.nav-footer a:hover{color: #727272 !important;}
+[type='submit']:hover,.button:hover{background: #727272;}
+.akaleya a,.menu .current-menu-item a,.menu a:hover,#navigation a:hover,.menu-down a:hover{color: #c9c9c9 !important;}
+.menu a,#navigation a,[type='submit'],button{color: #fff!important;} */
+
 .vh-30{height:30vh!important;}
 form, input[type='submit'],input[type='text'],input[type='email'], textarea, form p label{width: 100%;}
 form, input[type='submit'],input[type='text'],input[type='email'], textarea, form p label{width: 100%;}
 input, textarea{border:none;border-bottom: 2px solid #000; margin-bottom: 1rem;border-radius: 0px!important;}
 textarea{height:8rem;}
 [type='submit'],button{background: #fff;text-transform: uppercase; font-weight: 600;border: #ccc solid 1px; padding: 1rem 0;color: #727272;}
-form label{font-weight: 600; margin-bottom: 1rem;}
+form label{margin-bottom: 1rem;}
+
 /* DISPLAY */
+#logoprint,.grecaptcha-badge{display: none!important;}
 .display-inline-block,a.custom-logo-link,.wp-block-button__link{display: inline-block!important;}
 /* header */
 #navbar{top: 0;}
@@ -47,7 +64,7 @@ ul.sub-menu li{position: relative;}
 .menu a,.menu-down a{padding-right: 1.5rem;}
 #navigation li,#menu-service-client li{padding-bottom:1rem;}
 #menu-reseaux-sociaux li,#not-found{font-size: 2rem;}
-#navigation a{font-size: 1.7rem;}
+#navigation a{font-size: 1.5rem;}
 .custom-header{position: relative; width: 100%;}
 #wp-custom-header{margin-top: 45px; max-height: 95vh; overflow: hidden;}
 .custom-header img, .custom-header video,.custom-header iframe{
@@ -69,7 +86,7 @@ ul.sub-menu li{position: relative;}
     height: 110vh;
     left: 0;
     background: #000;
-    padding: 5rem 0 0 10rem;
+    padding: 5rem 0 0 7rem;
 }
 .burger{    
     margin: 0;
@@ -116,7 +133,7 @@ overflow-wrap: break-word;}
 /* Grid */
 @media (min-width: 576px) {
     .row-nav{max-width:540px;}
-    #navigation{ padding: 5rem 0 0 20rem; }
+    #navigation{ padding: 7rem 0 0 15rem; }
 }
 @media (min-width: 768px) {
     .row-nav{max-width:720px;}
