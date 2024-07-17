@@ -10,14 +10,18 @@ function wp_styles_scripts(){
     wp_enqueue_style('font-awesome', get_template_directory_uri() .'/assets/font-awesome/css/all.css');
     wp_enqueue_style('print', get_template_directory_uri() .'/assets/css/print.css', array(), '1.0', 'print');
     wp_enqueue_style('woocommerce', get_template_directory_uri() .'/assets/css/wc-style.css');
+    wp_enqueue_script('burger', get_template_directory_uri() . '/assets/js/burger-animate.js', '', '', true);
+    // wp_enqueue_script('sub-menu', get_template_directory_uri() . '/assets/js/sub-menu.js', '', '', true);
+
+
     wp_enqueue_style('style', get_stylesheet_uri());
 }
 function akaleyashop_setup(){
     add_theme_support('custom-logo', array(
     'height'      => 60,
     'width'       => 200,
-    'flex-width'  => true,
-    'flex-height'  => true,
+    'flex-width'  => false,
+    'flex-height'  => false,
     ));
     add_theme_support('post-thumbnails');
     add_theme_support('title-tag');
@@ -87,20 +91,3 @@ function cpt_faq_init(){
     register_post_type('faq', $args);
     register_taxonomy_for_object_type('category', 'faq');
 }
-
-
-
-// function akaleyaboutique_customize_register( $wp_customize ) {
-//   // Do stuff with $wp_customize, the WP_Customize_Manager object.
-//   $wp_customize->add_panel( 'header_text_button', array(
-//     'title' => __( 'Header Text and Button' ),
-//     'description' => $description, // Include html tags such as <p>.
-//     'priority' => 70, // Mixed with top-level-section hierarchy.
-//   ) );
-//   $wp_customize->add_section( $section_id , array(
-//     'title' => $menu->name,
-//     'panel' => 'header_text_button',
-//   ) );
-// }
-// add_action( 'customize_register', 'akaleyaboutique_customize_register' );
-

@@ -26,8 +26,7 @@
             </div>
         </div>
     </footer>
-    <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/assets/js/navigation/burger.js' async defer></script>
-    <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/assets/js/navigation/sub-menu.js' async defer></script>
+
     <?php wp_footer();?>
 </body>
 </html>

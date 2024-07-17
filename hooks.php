@@ -14,7 +14,7 @@ add_action('shutdown', function() {
 // if (!current_user_can( 'manage_options' )) {
    add_filter('show_admin_bar', '__return_false');
    // }
-   add_image_size( 'header_xs',360,722, 'right','top'   );
+   add_image_size( 'header_xs',400,300, 'right','top');
    add_image_size( 'header_sm',576,912, 'right','top'   );
 
    add_filter( 'get_header_image_tag_attributes', 'remove_dimensions_from_header_image', 10, 2 );

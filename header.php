@@ -5,7 +5,6 @@
  */ ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-
 <head>
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -30,25 +29,9 @@
                 </div>
             </div>
             <section class='custom-header z-index1'>
-                <!-- <div class='custom-header-media'> -->
-                <?php
+               <?php
                  the_custom_header_markup();
                 //  the_header_image_tag();
-
-                
-                ?>
-<!-- </div> -->
-                 <!-- <img src="http://boutique-new.local/wp-content/uploads/2024/07/site-img-test-2000-912.jpg" width="2000" height="912" alt="" 
-                srcset="http://boutique-new.local/wp-content/uploads/2024/07/site-img-test-2000-912.jpg 2000w, 
-                http://boutique-new.local/wp-content/uploads/2024/07/site-img-test-2000-912-300x722.jpg 300w, 
-                                http://boutique-new.local/wp-content/uploads/2024/07/site-img-test-2000-912-576x912.jpg 576w, 
-
-                http://boutique-new.local/wp-content/uploads/2024/07/site-img-test-2000-912-1024x467.jpg 1024w, 
-                http://boutique-new.local/wp-content/uploads/2024/07/site-img-test-2000-912-768x350.jpg 768w, 
-                http://boutique-new.local/wp-content/uploads/2024/07/site-img-test-2000-912-1536x700.jpg 1536w, 
-                http://boutique-new.local/wp-content/uploads/2024/07/site-img-test-2000-912-600x274.jpg 600w" 
-                sizes="(max-width: 2000px) 100vw, 2000px" decoding="async" fetchpriority="high"> -->
-                <?php
                 $header_title = esc_html(get_theme_mod('header_title'));
                 $header_text = esc_html(get_theme_mod('header_text'));
                 $header_button = esc_html(get_theme_mod('header_button'));
@@ -74,8 +57,6 @@
                     echo '</div>';
                 endif;
                 ?>
-
-                <!-- </div>   -->
             </section>
         </header>
     <?php else : ?>
