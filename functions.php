@@ -2,6 +2,7 @@
 <?php require 'hooks.php';
 require 'inc/akaleyaboutique-functions.php';
 require 'inc/akaleyaboutique-hooks.php';
+require 'inc/akaleyaboutique-appearance.php';
 function wp_styles_scripts(){
     wp_enqueue_style('bootstrap', get_template_directory_uri() .'/assets/bootstrap/bootstrap.min.css');
     wp_enqueue_script('jquery');
@@ -24,8 +25,9 @@ function akaleyashop_setup(){
         apply_filters('akaleyashop_custom_header_args',
             array(
                 'default-image'    => get_parent_theme_file_uri('/images/gabarit-image-header.jpg'),
+                'default-text-color' => '000',
                 'width'            => 2000,
-                'height'           => 1200,
+                'height'           => 912,
                 'flex-height'      => true,
             )));
     register_default_headers(
@@ -37,6 +39,12 @@ function akaleyashop_setup(){
         ),
     ));
     add_theme_support( 'woocommerce' ); // usage basic. Possibilité d'améliorer
+}
+function akaleyashop_remove_styles_scripts(){
+    wp_dequeue_style('global-styles-inline-css');
+    wp_dequeue_style( 'global-styles' );
+    wp_dequeue_style( 'wp-emoji-styles-inline-css' );
+    wp_dequeue_script( 'wp-emoji-releases' );
 }
 function wpm_myme_types($mime_types){
     $mime_types['svg'] = 'image/svg+xml';
@@ -79,3 +87,20 @@ function cpt_faq_init(){
     register_post_type('faq', $args);
     register_taxonomy_for_object_type('category', 'faq');
 }
+
+
+
+// function akaleyaboutique_customize_register( $wp_customize ) {
+//   // Do stuff with $wp_customize, the WP_Customize_Manager object.
+//   $wp_customize->add_panel( 'header_text_button', array(
+//     'title' => __( 'Header Text and Button' ),
+//     'description' => $description, // Include html tags such as <p>.
+//     'priority' => 70, // Mixed with top-level-section hierarchy.
+//   ) );
+//   $wp_customize->add_section( $section_id , array(
+//     'title' => $menu->name,
+//     'panel' => 'header_text_button',
+//   ) );
+// }
+// add_action( 'customize_register', 'akaleyaboutique_customize_register' );
+
