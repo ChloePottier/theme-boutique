@@ -59,9 +59,14 @@ function register_nav(){
     register_nav_menus(
         array(
         'header-menu' => __('Header Menu'),
-        'footer-menu' => __('Footer Menu'),
+        'footer-1-menu' => __('Footer 1 Menu'),
+        'footer-2-menu' => __('Footer 2 Menu'),
         'social-link-menu' => __('Social Link Menu'),
        ));
+}
+//callback menu : fallback_cb in wp_nav_menu()
+function akaleyaboutique_no_menu(){
+    echo '';
 }
 function cpt_faq_init(){
     $labels = array(
