@@ -23,11 +23,11 @@ function akaleya_wc_breadcrumbs() {
 }
 
 // repositionner détail produit
-function akaleya_short_description_tab() {
-    wc_get_template( 'single-product/tabs/tabs.php' );
-}
-if ( ! function_exists( 'akaleya_clear' ) ) {
-	function akaleya_clear() {
-		wc_get_template( 'single-product/clear.php' );
-	}
-}
+// function akaleya_short_description_tab() {
+//     wc_get_template( 'single-product/tabs/tabs.php' );
+// }
+// if ( ! function_exists( 'akaleya_clear' ) ) {
+// 	function akaleya_clear() {
+// 		wc_get_template( 'single-product/clear.php' );
+// 	}
+// }

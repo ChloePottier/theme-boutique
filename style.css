@@ -86,7 +86,7 @@ nav li,#menu-shop li{list-style: none;}
 
 .vh-30{height:30vh!important;}
 form, input[type='submit'],input[type='text'],input[type='email'], textarea, form p label{width: 100%;}
-input, textarea{border:none;border-bottom: 2px solid #000; margin-bottom: 1rem;border-radius: 0px!important;}
+/* input, textarea{border:none;border-bottom: 2px solid #000; margin-bottom: 1rem;border-radius: 0px!important;} */
 textarea{height:8rem;}
 /* [type='submit'],button{background: #fff;text-transform: uppercase; font-weight: 600;border: #ccc solid 1px; padding: 1rem 0;color: #727272;} */
 form label{margin-bottom: 1rem;}

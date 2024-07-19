@@ -3,8 +3,7 @@
 require 'inc/akaleyaboutique-functions.php';
 require 'inc/akaleyaboutique-hooks.php';
 require 'inc/akaleyaboutique-appearance.php';
-function wp_styles_scripts()
-{
+function wp_styles_scripts(){
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/bootstrap/bootstrap.min.css');
     wp_enqueue_script('jquery');
     wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/bootstrap/bootstrap.min.js', array('jquery', 'popper'), 1, true);
@@ -12,9 +11,6 @@ function wp_styles_scripts()
     wp_enqueue_style('print', get_template_directory_uri() . '/assets/css/print.css', array(), '1.0', 'print');
     wp_enqueue_style('woocommerce', get_template_directory_uri() . '/assets/css/wc-style.css');
     wp_enqueue_script('burger', get_template_directory_uri() . '/assets/js/burger-animate.js', '', '', true);
-    // wp_enqueue_script('sub-menu', get_template_directory_uri() . '/assets/js/sub-menu.js', '', '', true);
-
-
     wp_enqueue_style('style', get_stylesheet_uri());
 }
 function akaleyashop_setup()
@@ -76,8 +72,7 @@ function register_nav()
     );
 }
 //callback menu : fallback_cb in wp_nav_menu()
-function akaleyaboutique_no_menu()
-{
+function akaleyaboutique_no_menu(){
     echo '';
 }
 // Widgets
