@@ -1,4 +1,4 @@
-<div class='row row-nav'>
+<div class='row row-nav justify-content-lg-between'>
     <div class='col-7 col-lg-3 col-custom-logo align-items-center d-flex'>
         <?php if (function_exists('the_custom_logo')) {
             the_custom_logo();

@@ -6,6 +6,7 @@ remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
 add_filter('upload_mimes', 'wpm_myme_types', 1, 1);
 add_action('init', 'register_nav');
+add_action('widgets_init', 'footer_widgets_init');
 add_action('init', 'cpt_faq_init');
 remove_action('shutdown', 'wp_ob_end_flush_all', 1);
 add_action('shutdown', function() {

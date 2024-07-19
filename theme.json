@@ -57,6 +57,21 @@
                     "fontFamily": "\"Poppins Regular\", sans-serif",
                     "name": "Poppins Regular",
                     "slug": "heading"
+                },
+                {
+                   "fontFace": [
+                        {
+                            "fontFamily": "Akaleya contact icônes",
+                            "fontStretch": "regular",
+                            "fontStyle": "normal",
+                            "src": [
+                                "file:./assets/fonts/akaleya_contact_icones/akaleya_contact_icones.woff2"
+                            ]
+                        }
+                    ],
+                    "fontFamily": "\"Akaleya Contact icône\", sans-serif",
+                    "name": "akaleya_contact_icones",
+                    "slug": "contact_icones" 
                 }
             ],
             "fontSizes": [

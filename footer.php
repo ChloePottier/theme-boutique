@@ -8,22 +8,28 @@
         <div class='row'>
             <div class='col-12 col-md-3 text-center text-md-start nav-footer'>
                 <!-- Logo -->
-
-
-            </div>
-            <div class='col-12 col-md-3 text-center text-md-start'>
-                <h2 class='fw-bold text-uppercase fs-5'><?php echo wp_get_nav_menu_name('footer-1-menu'); ?></h2>
-                <?php wp_nav_menu(array('theme_location' => 'footer-1-menu', 'menu_class' => 'menu-subfooter p-0 fs-6', 'container' => 'nav', 'fallback_cb' => 'akaleyaboutique_no_menu')); ?>
+                 <!-- Widget -->
+                 <?php if ( is_active_sidebar( 'widget-footer-1' ) ) {
+                            dynamic_sidebar('widget-footer-1');
+                            }?>
 
             </div>
             <div class='col-12 col-md-3 text-center text-md-start'>
                 <h2 class='fw-bold text-uppercase fs-5'><?php echo wp_get_nav_menu_name('footer-2-menu'); ?></h2>
-                <?php wp_nav_menu(array('menu' => 'Footer Menu 2', 'theme_location' => 'footer-2-menu', 'menu_class' => 'menu-subfooter p-0 fs-6', 'container' => 'nav', 'fallback_cb' => 'akaleyaboutique_no_menu')); ?>
+                <?php wp_nav_menu(array('theme_location' => 'footer-2-menu', 'menu_class' => 'menu-subfooter p-0 fs-6', 'container' => 'nav', 'fallback_cb' => 'akaleyaboutique_no_menu')); ?>
+
             </div>
-            <div class='col-12 col-md-3 fs-2 nav-footer text-center text-md-end'>
+            <div class='col-12 col-md-3 text-center text-md-start'>
+                <h2 class='fw-bold text-uppercase fs-5'><?php echo wp_get_nav_menu_name('footer-3-menu'); ?></h2>
+                <?php wp_nav_menu(array('theme_location' => 'footer-3-menu', 'menu_class' => 'menu-subfooter p-0 fs-6', 'container' => 'nav', 'fallback_cb' => 'akaleyaboutique_no_menu')); ?>
+            </div>
+            <div class='col-12 col-md-3 fs-2 nav-footer text-center text-md-start'>
                 <!-- widget pour contact ? -->
-                <h2 class='fw-bold text-uppercase fs-5'>Suivez-nous sur :</h2>
-                <?php wp_nav_menu(array('menu'  => 'Réseaux sociaux', 'theme_location' => 'footer-menu', 'menu_class' => 'menu-footer p-0 d-flex flex-row justify-content-center justify-content-md-end', 'container' => 'nav')); ?>
+                <?php if ( is_active_sidebar( 'widget-footer-4' ) ) {
+                            dynamic_sidebar('widget-footer-4');
+                            }?>
+                <h2 class='fw-bold text-uppercase fs-5 pt-3'>Suivez-nous sur :</h2>
+                <?php wp_nav_menu(array('menu'  => 'Réseaux sociaux', 'theme_location' => 'footer-menu', 'menu_class' => 'menu-footer p-0 d-flex flex-row justify-content-center', 'container' => 'nav')); ?>
             </div>
         </div>
     </div>

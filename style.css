@@ -6,6 +6,8 @@ Version:     2.0
 Text Domain:  akaleyaboutique
 Tags:         website, e-commerce, eco-conception, wordpress, woocommerce, FAQ, size guide
 */
+
+
 /* FONT */
 body{font-family: Helvetica, Arial, sans-serif;}
 .custom-font,h1,h2,h3,h4,h5,h6,#menu-header a,[type='submit'],button:not(.menu-header-container button),.wp-block-button a,.header_button_text {font-family: 'Poppins Regular', Helvetica, Arial, sans-serif !important;}
@@ -19,6 +21,34 @@ h2.h2-blog-info-description{display: none;}
 .white-space-nowraph1.h1-blog-info-name,h2.h2-blog-info-description{white-space: nowrap;}
 a:not(main p a){text-decoration: none!important;}
 
+
+@font-face {
+    font-family: 'akaleya_contact_icones';
+    src: url('./assets/fonts/akaleya_contact_icones/akaleya_contact_icones.eot?16057852');
+    src: url('./assets/fonts/akaleya_contact_icones/akaleya_contact_icones.eot?16057852#iefix') format('embedded-opentype'),
+         url('./assets/fonts/akaleya_contact_icones/akaleya_contact_icones.woff?16057852') format('woff'),
+         url('./assets/fonts/akaleya_contact_icones/akaleya_contact_icones.ttf?16057852') format('truetype'),
+         url('./assets/fonts/akaleya_contact_icones/akaleya_contact_icones.svg?16057852#akaleya_contact_icones') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .akaleya-icon {
+    font-family: "akaleya_contact_icones";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size:1.3rem;
+  }
 /* Colors */
 :root {
     --black: #000;
@@ -32,7 +62,7 @@ a:not(main p a){text-decoration: none!important;}
 main p a,#nav-faq div a{color: var(--grey)}
 main p a:hover,.text-black,.akaleya a:hover,#subfooter a,#nav-faq div a:hover{color: var(--black) ;}
 .text-grey-dark,#menu-shop a,a#bloginfo, #burger span{color: var(--dark-grey);}
-.akaleya a,#subfooter a:hover, footer a.text-black:hover,
+.akaleya a,#subfooter a:hover, footer a.text-black:hover, .widget-footer-4 .akaleya-icon,
 .sub-menu .menu-item a:hover,.sub-menu .current-menu-item a,.current_page_ancestor a,#menu-shop a:hover{color: var(--grey)}
 .text-light-grey,#menu-header a:hover,#menu-header a[aria-current="page"]{color: var(--light-grey) ;}
 #menu-header a,.container-text-header h1,.container-text-header p{color: var(--white);}
